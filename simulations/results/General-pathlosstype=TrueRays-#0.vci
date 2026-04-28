@@ -1,0 +1,1159 @@
+file 80683 1777406765                                           
+version 3
+run General-0-20260428-15:06:00-6776
+attr configname General
+attr datetime 20260428-15:06:00
+attr datetimef 20260428-150600
+attr experiment General
+attr inifile C:/OmnetDos/test_omnet/simulations/omnetpp.ini
+attr iterationvars "$pathlosstype=\"TrueRays\""
+attr iterationvarsd pathlosstype=TrueRays
+attr iterationvarsf pathlosstype=TrueRays-
+attr measurement "$pathlosstype=\"TrueRays\""
+attr network wireless3.simulations.Wireless3
+attr processid 6776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+itervar pathlosstype "\"TrueRays\""
+config image-path C:/OmnetDos/inet4.4/images;C:/OmnetDos/flora-1.1.0/images
+config network wireless3.simulations.Wireless3
+config sim-time-limit 600s
+config simtime-resolution -11
+config *.gateway.mobility.typename StationaryMobility
+config *.gateway.mobility.initialX 250m
+config *.gateway.mobility.initialY 150m
+config *.gateway.mobility.initialZ 0m
+config *.gateway.mobility.initFromDisplayString false
+config *.networkServer.mobility.typename StationaryMobility
+config *.networkServer.mobility.initialX 400m
+config *.networkServer.mobility.initialY 50m
+config *.networkServer.mobility.initialZ 0m
+config *.networkServer.mobility.initFromDisplayString false
+config *.host[0].mobility.initialX 1048m
+config *.host[0].mobility.initialY 439m
+config *.host[0].mobility.initialZ 0m
+config *.host[1].mobility.initialX 846m
+config *.host[1].mobility.initialY 368m
+config *.host[1].mobility.initialZ 0m
+config *.host[2].mobility.initialX 755m
+config *.host[2].mobility.initialY 320m
+config *.host[2].mobility.initialZ 0m
+config *.host[3].mobility.initialX 701m
+config *.host[3].mobility.initialY 225m
+config *.host[3].mobility.initialZ 0m
+config *.host[4].mobility.initialX 480m
+config *.host[4].mobility.initialY 372m
+config *.host[4].mobility.initialZ 0m
+config *.host[5].mobility.initialX 616m
+config *.host[5].mobility.initialY 273m
+config *.host[5].mobility.initialZ 0m
+config *.host[6].mobility.initialX 478m
+config *.host[6].mobility.initialY 294m
+config *.host[6].mobility.initialZ 0m
+config *.host[7].mobility.initialX 548m
+config *.host[7].mobility.initialY 242m
+config *.host[7].mobility.initialZ 0m
+config *.host[8].mobility.initialX 631m
+config *.host[8].mobility.initialY 199m
+config *.host[8].mobility.initialZ 0m
+config *.host[9].mobility.initialX 580m
+config *.host[9].mobility.initialY 134m
+config *.host[9].mobility.initialZ 0m
+config *.host[10].mobility.initialX 419m
+config *.host[10].mobility.initialY 283m
+config *.host[10].mobility.initialZ 0m
+config *.host[11].mobility.initialX 470m
+config *.host[11].mobility.initialY 212m
+config *.host[11].mobility.initialZ 0m
+config *.host[12].mobility.initialX 375m
+config *.host[12].mobility.initialY 175m
+config *.host[12].mobility.initialZ 0m
+config *.host[13].mobility.initialX 331m
+config *.host[13].mobility.initialY 259m
+config *.host[13].mobility.initialZ 0m
+config *.host[14].mobility.initialX 533m
+config *.host[14].mobility.initialY 27m
+config *.host[14].mobility.initialZ 0m
+config *.host[15].mobility.initialX 304m
+config *.host[15].mobility.initialY 168m
+config *.host[15].mobility.initialZ 0m
+config *.host[16].mobility.initialX 289m
+config *.host[16].mobility.initialY 198m
+config *.host[16].mobility.initialZ 0m
+config *.host[17].mobility.initialX 388m
+config *.host[17].mobility.initialY 19m
+config *.host[17].mobility.initialZ 0m
+config *.host[18].mobility.initialX 239m
+config *.host[18].mobility.initialY 153m
+config *.host[18].mobility.initialZ 0m
+config *.host[19].mobility.initialX 193m
+config *.host[19].mobility.initialY 163m
+config *.host[19].mobility.initialZ 0m
+config *.numHost 20
+config *.width 1198m
+config *.height 494m
+config *.host[*].numApps 1
+config *.host[*].app[0].typename SimpleLoRaApp
+config *.host[*].app[0].dataSize 10B
+config *.host[*].app[0].initialLoRaTP 14dBm
+config *.host[*].app[0].initialLoRaCF 915MHz
+config *.host[*].app[0].initialLoRaBW 125kHz
+config *.host[*].app[0].initialLoRaSF 10
+config *.host[*].app[0].initialLoRaCR 4
+config *.host[*].app[0].initialUseHeader true
+config *.host[*].app[0].evaluateADRinNode false
+config *.host[*].app[0].destNodeIds "\"-1\""
+config *.host[*].app[0].nextHopId -1
+config *.host[0].app[0].destNodeIds "\"1 2\""
+config *.host[0].app[0].srcNodeId 0
+config *.host[0].app[0].nextHopId 1
+config *.host[0].app[0].timeToFirstPacket exponential(5s)
+config *.host[0].app[0].timeToNextPacket exponential(10s)
+config *.host[1].app[0].destNodeIds "\"0 3\""
+config *.host[1].app[0].srcNodeId 1
+config *.host[1].app[0].nextHopId 3
+config *.host[1].app[0].timeToFirstPacket exponential(5s)
+config *.host[1].app[0].timeToNextPacket exponential(10s)
+config *.host[2].app[0].destNodeIds "\"0 5\""
+config *.host[2].app[0].srcNodeId 2
+config *.host[2].app[0].nextHopId -1
+config *.host[2].app[0].timeToFirstPacket exponential(5s)
+config *.host[2].app[0].timeToNextPacket exponential(10s)
+config *.host[3].app[0].destNodeIds "\"1 4\""
+config *.host[3].app[0].srcNodeId 3
+config *.host[3].app[0].nextHopId 4
+config *.host[3].app[0].timeToFirstPacket exponential(5s)
+config *.host[3].app[0].timeToNextPacket exponential(10s)
+config *.host[4].app[0].destNodeIds "\"3 5\""
+config *.host[4].app[0].srcNodeId 4
+config *.host[4].app[0].nextHopId 5
+config *.host[4].app[0].timeToFirstPacket exponential(5s)
+config *.host[4].app[0].timeToNextPacket exponential(10s)
+config *.host[5].app[0].destNodeIds "\"4 2 7 11\""
+config *.host[5].app[0].srcNodeId 5
+config *.host[5].app[0].nextHopId 2
+config *.host[5].app[0].timeToFirstPacket exponential(5s)
+config *.host[5].app[0].timeToNextPacket exponential(10s)
+config *.host[6].app[0].destNodeIds "\"7\""
+config *.host[6].app[0].srcNodeId 6
+config *.host[6].app[0].nextHopId 7
+config *.host[6].app[0].timeToFirstPacket exponential(5s)
+config *.host[6].app[0].timeToNextPacket exponential(10s)
+config *.host[7].app[0].destNodeIds "\"6 5 8\""
+config *.host[7].app[0].srcNodeId 7
+config *.host[7].app[0].nextHopId 5
+config *.host[7].app[0].timeToFirstPacket exponential(5s)
+config *.host[7].app[0].timeToNextPacket exponential(10s)
+config *.host[8].app[0].destNodeIds "\"7\""
+config *.host[8].app[0].srcNodeId 8
+config *.host[8].app[0].nextHopId 7
+config *.host[8].app[0].timeToFirstPacket exponential(5s)
+config *.host[8].app[0].timeToNextPacket exponential(10s)
+config *.host[9].app[0].destNodeIds "\"11 10\""
+config *.host[9].app[0].srcNodeId 9
+config *.host[9].app[0].nextHopId 11
+config *.host[9].app[0].timeToFirstPacket exponential(5s)
+config *.host[9].app[0].timeToNextPacket exponential(10s)
+config *.host[10].app[0].destNodeIds "\"9\""
+config *.host[10].app[0].srcNodeId 10
+config *.host[10].app[0].nextHopId 9
+config *.host[10].app[0].timeToFirstPacket exponential(5s)
+config *.host[10].app[0].timeToNextPacket exponential(10s)
+config *.host[11].app[0].destNodeIds "\"9 5 12\""
+config *.host[11].app[0].srcNodeId 11
+config *.host[11].app[0].nextHopId 5
+config *.host[11].app[0].timeToFirstPacket exponential(5s)
+config *.host[11].app[0].timeToNextPacket exponential(10s)
+config *.host[12].app[0].destNodeIds "\"11 13 15\""
+config *.host[12].app[0].srcNodeId 12
+config *.host[12].app[0].nextHopId 11
+config *.host[12].app[0].timeToFirstPacket exponential(5s)
+config *.host[12].app[0].timeToNextPacket exponential(10s)
+config *.host[13].app[0].destNodeIds "\"12 14\""
+config *.host[13].app[0].srcNodeId 13
+config *.host[13].app[0].nextHopId 12
+config *.host[13].app[0].timeToFirstPacket exponential(5s)
+config *.host[13].app[0].timeToNextPacket exponential(10s)
+config *.host[14].app[0].destNodeIds "\"13\""
+config *.host[14].app[0].srcNodeId 14
+config *.host[14].app[0].nextHopId 13
+config *.host[14].app[0].timeToFirstPacket exponential(5s)
+config *.host[14].app[0].timeToNextPacket exponential(10s)
+config *.host[15].app[0].destNodeIds "\"12 16 18\""
+config *.host[15].app[0].srcNodeId 15
+config *.host[15].app[0].nextHopId 12
+config *.host[15].app[0].timeToFirstPacket exponential(5s)
+config *.host[15].app[0].timeToNextPacket exponential(10s)
+config *.host[16].app[0].destNodeIds "\"15 17\""
+config *.host[16].app[0].srcNodeId 16
+config *.host[16].app[0].nextHopId 15
+config *.host[16].app[0].timeToFirstPacket exponential(5s)
+config *.host[16].app[0].timeToNextPacket exponential(10s)
+config *.host[17].app[0].destNodeIds "\"16\""
+config *.host[17].app[0].srcNodeId 17
+config *.host[17].app[0].nextHopId 16
+config *.host[17].app[0].timeToFirstPacket exponential(5s)
+config *.host[17].app[0].timeToNextPacket exponential(10s)
+config *.host[18].app[0].destNodeIds "\"15 19\""
+config *.host[18].app[0].srcNodeId 18
+config *.host[18].app[0].nextHopId 15
+config *.host[18].app[0].timeToFirstPacket exponential(5s)
+config *.host[18].app[0].timeToNextPacket exponential(10s)
+config *.host[19].app[0].destNodeIds "\"18\""
+config *.host[19].app[0].srcNodeId 19
+config *.host[19].app[0].nextHopId 18
+config *.host[19].app[0].timeToFirstPacket exponential(5s)
+config *.host[19].app[0].timeToNextPacket exponential(10s)
+config *.radioMedium.pathLoss.frequency 915000000
+config *.host[*].mobility.typename StationaryMobility
+config *.host[*].mobility.initFromDisplayString false
+config *.host[*].gatewayX 250
+config *.host[*].gatewayY 150
+config *.host[*].maxGatewayDistance 2000
+config *.host[*].app[0].numberOfPacketsToSend 0
+config *.radioMedium.typename LoRaMedium
+config *.radioMedium.pathLoss.typename TrueRays
+config *.radioMedium.maxTransmissionDuration 100s
+config *.radioMedium.mediumLimitCache.maxTransmissionDuration 100s
+config *.radioMedium.backgroundNoise.typename IsotropicScalarBackgroundNoise
+config *.radioMedium.backgroundNoise.power -117dBm
+config *.radioMedium.pathLoss.width_tunnel 4
+config *.radioMedium.pathLoss.height_tunnel 4
+config *.radioMedium.pathLoss.gain_tx 1.5849
+config *.radioMedium.pathLoss.gain_tx_tr 0.2
+config *.radioMedium.pathLoss.power_tx 2.5
+config *.radioMedium.pathLoss.p_tx_radio 0.025119W
+config *.host[*].LoRaNic.queue.typename DropTailQueue
+config *.host[*].LoRaNic.queue.packetCapacity -1
+config *.host[*].LoRaNic.radio.receiver.typename LoRaReceiver
+config *.host[*].LoRaNic.radio.receiver.energyDetection -117dBm
+config *.host[*].LoRaNic.radio.receiver.sensitivity -117dBm
+config *.gateway.numUdpApps 1
+config *.gateway.packetForwarder.destAddresses "\"networkServer\""
+config *.gateway.packetForwarder.localPort 2000
+config *.gateway.packetForwarder.destPort 1000
+config *.gateway.packetForwarder.indexNumber 0
+config *.networkServer.numApps 1
+config *.networkServer.app[0].typename NetworkServerApp
+config *.networkServer.app[0].destAddresses "\"gateway\""
+config *.networkServer.app[0].destPort 2000
+config *.networkServer.app[0].localPort 1000
+config *.networkServer.app[0].adrMethod "\"avg\""
+config **.energySourceModule "\"\""
+config **.energyStorageModule "\"\""
+config **.energyConsumerModule "\"\""
+config *.visualizer.mediumVisualizer.displaySignals true
+config **.host[*].displayString "\"i=misc/sensor\""
+config **.gateway.displayString "\"i=misc/antennatower\""
+config **.networkServer.displayString "\"i=misc/server\""
+config *.visualizer.physicalLinkVisualizer.displayLinks true
+config *.visualizer.physicalLinkVisualizer.packetFilter "\"DataFrame*\""
+config *.visualizer.dataLinkVisualizer.displayLinks true
+config *.radioMedium.*.result-recording-modes default,+vector
+config *.host[*].LoRaNic.radio.*.result-recording-modes default,+vector
+config **.snir:vector.result-recording-modes +vector
+
+vector 0 Wireless3.networkServer.eth[0].queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 1 Wireless3.networkServer.eth[0].queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 2 Wireless3.networkServer.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 3 Wireless3.networkServer.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 4 Wireless3.networkServer.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 5 Wireless3.gateway.eth[0].queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 6 Wireless3.gateway.eth[0].queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 7 Wireless3.gateway.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 8 Wireless3.gateway.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 9 Wireless3.gateway.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 10 Wireless3.host[0].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 11 Wireless3.host[0].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 12 Wireless3.host[1].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 13 Wireless3.host[1].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 14 Wireless3.host[2].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 15 Wireless3.host[2].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 16 Wireless3.host[3].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 17 Wireless3.host[3].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 18 Wireless3.host[4].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 19 Wireless3.host[4].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 20 Wireless3.host[5].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 21 Wireless3.host[5].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 22 Wireless3.host[6].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 23 Wireless3.host[6].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 24 Wireless3.host[7].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 25 Wireless3.host[7].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 26 Wireless3.host[8].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 27 Wireless3.host[8].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 28 Wireless3.host[9].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 29 Wireless3.host[9].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 30 Wireless3.host[10].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 31 Wireless3.host[10].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 32 Wireless3.host[11].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 33 Wireless3.host[11].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 34 Wireless3.host[12].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 35 Wireless3.host[12].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 36 Wireless3.host[13].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 37 Wireless3.host[13].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 38 Wireless3.host[14].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 39 Wireless3.host[14].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 40 Wireless3.host[15].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 41 Wireless3.host[15].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 42 Wireless3.host[16].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 43 Wireless3.host[16].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 44 Wireless3.host[17].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 45 Wireless3.host[17].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 46 Wireless3.host[18].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 47 Wireless3.host[18].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 48 Wireless3.host[19].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 49 Wireless3.host[19].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 50 Wireless3.gateway.LoRaGWNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 51 Wireless3.host[0].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 52 Wireless3.host[1].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 53 Wireless3.host[2].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 54 Wireless3.host[3].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 55 Wireless3.host[4].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 56 Wireless3.host[5].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 57 Wireless3.host[6].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 58 Wireless3.host[7].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 59 Wireless3.host[8].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 60 Wireless3.host[9].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 61 Wireless3.host[10].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 62 Wireless3.host[11].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 63 Wireless3.host[12].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 64 Wireless3.host[13].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 65 Wireless3.host[14].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 66 Wireless3.host[15].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 67 Wireless3.host[16].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 68 Wireless3.host[17].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 69 Wireless3.host[18].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 70 Wireless3.host[19].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 71 Wireless3.gateway.LoRaGWNic.radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source receptionStateChanged
+attr title "Radio reception state"
+vector 72 Wireless3.gateway.LoRaGWNic.radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source transmissionStateChanged
+attr title "Radio transmission state"
+vector 73 Wireless3.host[4].app[0] "SF Vector" ETV
+vector 74 Wireless3.host[4].app[0] "TP Vector" ETV
+vector 75 Wireless3.host[4].LoRaNic.queue incomingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPushStarted)
+attr title "incoming packet lengths"
+attr unit b
+vector 76 Wireless3.host[4].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 77 Wireless3.host[4].LoRaNic.queue queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source queueingTime(packetPulled)
+attr title "queueing times"
+attr unit s
+vector 78 Wireless3.host[4].LoRaNic.queue outgoingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPulled)
+attr title "outgoing packet lengths"
+attr unit b
+vector 79 Wireless3.host[4].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 80 Wireless3.host[4].LoRaNic.radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source transmissionStateChanged
+attr title "Radio transmission state"
+vector 81 Wireless3.host[11].app[0] "SF Vector" ETV
+vector 82 Wireless3.host[11].app[0] "TP Vector" ETV
+vector 83 Wireless3.host[11].LoRaNic.queue incomingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPushStarted)
+attr title "incoming packet lengths"
+attr unit b
+vector 84 Wireless3.host[11].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 85 Wireless3.host[11].LoRaNic.queue queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source queueingTime(packetPulled)
+attr title "queueing times"
+attr unit s
+vector 86 Wireless3.host[11].LoRaNic.queue outgoingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPulled)
+attr title "outgoing packet lengths"
+attr unit b
+vector 87 Wireless3.host[11].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 88 Wireless3.host[11].LoRaNic.radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source transmissionStateChanged
+attr title "Radio transmission state"
+0	36841 45 0 0 0 0 5 0 0 0 0
+1	36886 45 0 0 0 0 5 0 0 0 0
+2	36931 9 0 0 0 0 1 0 0 0 0
+3	36940 9 0 0 0 0 1 0 0 0 0
+4	36949 9 0 0 0 0 1 0 0 0 0
+5	36958 45 0 0 0 0 5 0 0 0 0
+6	37003 45 0 0 0 0 5 0 0 0 0
+7	37048 9 0 0 0 0 1 0 0 0 0
+8	37057 9 0 0 0 0 1 0 0 0 0
+9	37066 9 0 0 0 0 1 0 0 0 0
+10	37075 50 0 0 0 0 5 0 0 0 0
+11	37125 50 0 0 0 0 5 0 0 0 0
+12	37175 50 0 0 0 0 5 0 0 0 0
+13	37225 50 0 0 0 0 5 0 0 0 0
+14	37275 50 0 0 0 0 5 0 0 0 0
+15	37325 50 0 0 0 0 5 0 0 0 0
+16	37375 50 0 0 0 0 5 0 0 0 0
+17	37425 50 0 0 0 0 5 0 0 0 0
+18	37475 72 0 4 0 5.19079650332 6 0 0 0 0
+19	37547 72 0 4 0 5.19079650332 6 0 0 0 0
+20	37619 50 0 0 0 0 5 0 0 0 0
+21	37669 50 0 0 0 0 5 0 0 0 0
+22	37719 50 0 0 0 0 5 0 0 0 0
+23	37769 50 0 0 0 0 5 0 0 0 0
+24	37819 50 0 0 0 0 5 0 0 0 0
+25	37869 50 0 0 0 0 5 0 0 0 0
+26	37919 50 0 0 0 0 5 0 0 0 0
+27	37969 50 0 0 0 0 5 0 0 0 0
+28	38019 50 0 0 0 0 5 0 0 0 0
+29	38069 50 0 0 0 0 5 0 0 0 0
+30	38119 50 0 0 0 0 5 0 0 0 0
+31	38169 50 0 0 0 0 5 0 0 0 0
+32	38219 73 0 27 0 5.22306254154 6 0 0 0 0
+33	38292 73 0 27 0 5.22306254154 6 0 0 0 0
+34	38365 50 0 0 0 0 5 0 0 0 0
+35	38415 50 0 0 0 0 5 0 0 0 0
+36	38465 50 0 0 0 0 5 0 0 0 0
+37	38515 50 0 0 0 0 5 0 0 0 0
+38	38565 50 0 0 0 0 5 0 0 0 0
+39	38615 50 0 0 0 0 5 0 0 0 0
+40	38665 50 0 0 0 0 5 0 0 0 0
+41	38715 50 0 0 0 0 5 0 0 0 0
+42	38765 50 0 0 0 0 5 0 0 0 0
+43	38815 50 0 0 0 0 5 0 0 0 0
+44	38865 50 0 0 0 0 5 0 0 0 0
+45	38915 50 0 0 0 0 5 0 0 0 0
+46	38965 50 0 0 0 0 5 0 0 0 0
+47	39015 50 0 0 0 0 5 0 0 0 0
+48	39065 50 0 0 0 0 5 0 0 0 0
+49	39115 50 0 0 0 0 5 0 0 0 0
+50	39165 30 0 0 0 0 3 0 4 4 16
+51	39195 30 0 0 0 0 3 0 1 1 1
+52	39225 30 0 0 0 0 3 0 1 1 1
+53	39255 30 0 0 0 0 3 0 1 1 1
+54	39285 30 0 0 0 0 3 0 1 1 1
+55	39315 52 0 4 0 5.19079650332 4 0 3 4 10
+56	39367 30 0 0 0 0 3 0 1 1 1
+57	39397 30 0 0 0 0 3 0 1 1 1
+58	39427 30 0 0 0 0 3 0 1 1 1
+59	39457 30 0 0 0 0 3 0 1 1 1
+60	39487 30 0 0 0 0 3 0 1 1 1
+61	39517 30 0 0 0 0 3 0 1 1 1
+62	39547 53 0 27 0 5.22306254154 4 0 3 4 10
+63	39600 30 0 0 0 0 3 0 1 1 1
+64	39630 30 0 0 0 0 3 0 1 1 1
+65	39660 30 0 0 0 0 3 0 1 1 1
+66	39690 30 0 0 0 0 3 0 1 1 1
+67	39720 30 0 0 0 0 3 0 1 1 1
+68	39750 30 0 0 0 0 3 0 1 1 1
+69	39780 30 0 0 0 0 3 0 1 1 1
+70	39810 30 0 0 0 0 3 0 1 1 1
+71	39840 10 0 0 0 0 1 1 1 1 1
+72	39850 10 0 0 0 0 1 1 1 1 1
+73	39860 23 3 3 5.19079650332 5.19079650332 1 10 10 10 100
+74	39883 23 3 3 5.19079650332 5.19079650332 1 14 14 14 196
+75	39906 23 4 4 5.19079650332 5.19079650332 1 80 80 80 6400
+76	39929 602 4 4 0.1 5.1 51 0 0 0 0
+77	40531 22 4 4 5.19079650332 5.19079650332 1 0 0 0 0
+78	40553 23 4 4 5.19079650332 5.19079650332 1 80 80 80 6400
+79	40576 602 4 4 0.1 5.1 51 0 0 0 0
+80	41178 44 4 5 5.19079650332 5.19079650332 2 1 2 3 5
+81	41222 24 26 26 5.22306254154 5.22306254154 1 10 10 10 100
+82	41246 24 26 26 5.22306254154 5.22306254154 1 14 14 14 196
+83	41270 24 27 27 5.22306254154 5.22306254154 1 80 80 80 6400
+84	41294 666 27 27 0.1 5.2 52 0 0 0 0
+85	41960 23 27 27 5.22306254154 5.22306254154 1 0 0 0 0
+86	41983 24 27 27 5.22306254154 5.22306254154 1 80 80 80 6400
+87	42007 666 27 27 0.1 5.2 52 0 0 0 0
+88	42673 46 27 28 5.22306254154 5.22306254154 2 1 2 3 5
+vector 89 Wireless3.networkServer.eth[0].queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 90 Wireless3.networkServer.eth[0].queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 91 Wireless3.gateway.eth[0].queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 92 Wireless3.gateway.eth[0].queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 93 Wireless3.host[0].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 94 Wireless3.host[0].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 95 Wireless3.host[1].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 96 Wireless3.host[1].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 97 Wireless3.host[2].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 98 Wireless3.host[2].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 99 Wireless3.host[3].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 100 Wireless3.host[3].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 101 Wireless3.host[5].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 102 Wireless3.host[5].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 103 Wireless3.host[6].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 104 Wireless3.host[6].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 105 Wireless3.host[7].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 106 Wireless3.host[7].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 107 Wireless3.host[8].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 108 Wireless3.host[8].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 109 Wireless3.host[9].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 110 Wireless3.host[9].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 111 Wireless3.host[10].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 112 Wireless3.host[10].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 113 Wireless3.host[12].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 114 Wireless3.host[12].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 115 Wireless3.host[13].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 116 Wireless3.host[13].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 117 Wireless3.host[14].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 118 Wireless3.host[14].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 119 Wireless3.host[15].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 120 Wireless3.host[15].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 121 Wireless3.host[16].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 122 Wireless3.host[16].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 123 Wireless3.host[17].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 124 Wireless3.host[17].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 125 Wireless3.host[18].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 126 Wireless3.host[18].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 127 Wireless3.host[19].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 128 Wireless3.host[19].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+76	51434 38 42 42 5.2 5.22306330397 2 0 800 800 640000
+79	51472 38 42 42 5.2 5.22306330397 2 0 800 800 640000
+84	51510 37 42 42 5.22306330397 5.22306330397 1 3468.7137672929 3468.7137672929 3468.7137672929 12031975.199407
+87	51547 37 42 42 5.22306330397 5.22306330397 1 3468.7137672929 3468.7137672929 3468.7137672929 12031975.199407
+89	51584 689 42 42 0.1 5.22306330397 53 0 0 0 0
+90	52273 689 42 42 0.1 5.22306330397 53 0 0 0 0
+91	52962 689 42 42 0.1 5.22306330397 53 0 0 0 0
+92	53651 689 42 42 0.1 5.22306330397 53 0 0 0 0
+93	54340 689 42 42 0.1 5.22306330397 53 0 0 0 0
+94	55029 689 42 42 0.1 5.22306330397 53 0 0 0 0
+95	55718 689 42 42 0.1 5.22306330397 53 0 0 0 0
+96	56407 689 42 42 0.1 5.22306330397 53 0 0 0 0
+97	57096 689 42 42 0.1 5.22306330397 53 0 0 0 0
+98	57785 689 42 42 0.1 5.22306330397 53 0 0 0 0
+99	58474 689 42 42 0.1 5.22306330397 53 0 0 0 0
+100	59163 742 42 42 0.1 5.22306330397 53 0 0 0 0
+101	59905 742 42 42 0.1 5.22306330397 53 0 0 0 0
+102	60647 742 42 42 0.1 5.22306330397 53 0 0 0 0
+103	61389 742 42 42 0.1 5.22306330397 53 0 0 0 0
+104	62131 742 42 42 0.1 5.22306330397 53 0 0 0 0
+105	62873 742 42 42 0.1 5.22306330397 53 0 0 0 0
+106	63615 742 42 42 0.1 5.22306330397 53 0 0 0 0
+107	64357 742 42 42 0.1 5.22306330397 53 0 0 0 0
+108	65099 742 42 42 0.1 5.22306330397 53 0 0 0 0
+109	65841 742 42 42 0.1 5.22306330397 53 0 0 0 0
+110	66583 742 42 42 0.1 5.22306330397 53 0 0 0 0
+111	67325 742 42 42 0.1 5.22306330397 53 0 0 0 0
+112	68067 742 42 42 0.1 5.22306330397 53 0 0 0 0
+113	68809 742 42 42 0.1 5.22306330397 53 0 0 0 0
+114	69551 742 42 42 0.1 5.22306330397 53 0 0 0 0
+115	70293 742 42 42 0.1 5.22306330397 53 0 0 0 0
+116	71035 742 42 42 0.1 5.22306330397 53 0 0 0 0
+117	71777 742 42 42 0.1 5.22306330397 53 0 0 0 0
+118	72519 742 42 42 0.1 5.22306330397 53 0 0 0 0
+119	73261 742 42 42 0.1 5.22306330397 53 0 0 0 0
+120	74003 742 42 42 0.1 5.22306330397 53 0 0 0 0
+121	74745 742 42 42 0.1 5.22306330397 53 0 0 0 0
+122	75487 742 42 42 0.1 5.22306330397 53 0 0 0 0
+123	76229 742 42 42 0.1 5.22306330397 53 0 0 0 0
+124	76971 742 42 42 0.1 5.22306330397 53 0 0 0 0
+125	77713 742 42 42 0.1 5.22306330397 53 0 0 0 0
+126	78455 742 42 42 0.1 5.22306330397 53 0 0 0 0
+127	79197 742 42 42 0.1 5.22306330397 53 0 0 0 0
+128	79939 742 42 42 0.1 5.22306330397 53 0 0 0 0
+

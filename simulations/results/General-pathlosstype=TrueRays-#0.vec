@@ -1,0 +1,3668 @@
+version 3
+run General-0-20260428-15:06:00-6776
+attr configname General
+attr datetime 20260428-15:06:00
+attr datetimef 20260428-150600
+attr experiment General
+attr inifile C:/OmnetDos/test_omnet/simulations/omnetpp.ini
+attr iterationvars "$pathlosstype=\"TrueRays\""
+attr iterationvarsd pathlosstype=TrueRays
+attr iterationvarsf pathlosstype=TrueRays-
+attr measurement "$pathlosstype=\"TrueRays\""
+attr network wireless3.simulations.Wireless3
+attr processid 6776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+itervar pathlosstype "\"TrueRays\""
+config image-path C:/OmnetDos/inet4.4/images;C:/OmnetDos/flora-1.1.0/images
+config network wireless3.simulations.Wireless3
+config sim-time-limit 600s
+config simtime-resolution -11
+config *.gateway.mobility.typename StationaryMobility
+config *.gateway.mobility.initialX 250m
+config *.gateway.mobility.initialY 150m
+config *.gateway.mobility.initialZ 0m
+config *.gateway.mobility.initFromDisplayString false
+config *.networkServer.mobility.typename StationaryMobility
+config *.networkServer.mobility.initialX 400m
+config *.networkServer.mobility.initialY 50m
+config *.networkServer.mobility.initialZ 0m
+config *.networkServer.mobility.initFromDisplayString false
+config *.host[0].mobility.initialX 1048m
+config *.host[0].mobility.initialY 439m
+config *.host[0].mobility.initialZ 0m
+config *.host[1].mobility.initialX 846m
+config *.host[1].mobility.initialY 368m
+config *.host[1].mobility.initialZ 0m
+config *.host[2].mobility.initialX 755m
+config *.host[2].mobility.initialY 320m
+config *.host[2].mobility.initialZ 0m
+config *.host[3].mobility.initialX 701m
+config *.host[3].mobility.initialY 225m
+config *.host[3].mobility.initialZ 0m
+config *.host[4].mobility.initialX 480m
+config *.host[4].mobility.initialY 372m
+config *.host[4].mobility.initialZ 0m
+config *.host[5].mobility.initialX 616m
+config *.host[5].mobility.initialY 273m
+config *.host[5].mobility.initialZ 0m
+config *.host[6].mobility.initialX 478m
+config *.host[6].mobility.initialY 294m
+config *.host[6].mobility.initialZ 0m
+config *.host[7].mobility.initialX 548m
+config *.host[7].mobility.initialY 242m
+config *.host[7].mobility.initialZ 0m
+config *.host[8].mobility.initialX 631m
+config *.host[8].mobility.initialY 199m
+config *.host[8].mobility.initialZ 0m
+config *.host[9].mobility.initialX 580m
+config *.host[9].mobility.initialY 134m
+config *.host[9].mobility.initialZ 0m
+config *.host[10].mobility.initialX 419m
+config *.host[10].mobility.initialY 283m
+config *.host[10].mobility.initialZ 0m
+config *.host[11].mobility.initialX 470m
+config *.host[11].mobility.initialY 212m
+config *.host[11].mobility.initialZ 0m
+config *.host[12].mobility.initialX 375m
+config *.host[12].mobility.initialY 175m
+config *.host[12].mobility.initialZ 0m
+config *.host[13].mobility.initialX 331m
+config *.host[13].mobility.initialY 259m
+config *.host[13].mobility.initialZ 0m
+config *.host[14].mobility.initialX 533m
+config *.host[14].mobility.initialY 27m
+config *.host[14].mobility.initialZ 0m
+config *.host[15].mobility.initialX 304m
+config *.host[15].mobility.initialY 168m
+config *.host[15].mobility.initialZ 0m
+config *.host[16].mobility.initialX 289m
+config *.host[16].mobility.initialY 198m
+config *.host[16].mobility.initialZ 0m
+config *.host[17].mobility.initialX 388m
+config *.host[17].mobility.initialY 19m
+config *.host[17].mobility.initialZ 0m
+config *.host[18].mobility.initialX 239m
+config *.host[18].mobility.initialY 153m
+config *.host[18].mobility.initialZ 0m
+config *.host[19].mobility.initialX 193m
+config *.host[19].mobility.initialY 163m
+config *.host[19].mobility.initialZ 0m
+config *.numHost 20
+config *.width 1198m
+config *.height 494m
+config *.host[*].numApps 1
+config *.host[*].app[0].typename SimpleLoRaApp
+config *.host[*].app[0].dataSize 10B
+config *.host[*].app[0].initialLoRaTP 14dBm
+config *.host[*].app[0].initialLoRaCF 915MHz
+config *.host[*].app[0].initialLoRaBW 125kHz
+config *.host[*].app[0].initialLoRaSF 10
+config *.host[*].app[0].initialLoRaCR 4
+config *.host[*].app[0].initialUseHeader true
+config *.host[*].app[0].evaluateADRinNode false
+config *.host[*].app[0].destNodeIds "\"-1\""
+config *.host[*].app[0].nextHopId -1
+config *.host[0].app[0].destNodeIds "\"1 2\""
+config *.host[0].app[0].srcNodeId 0
+config *.host[0].app[0].nextHopId 1
+config *.host[0].app[0].timeToFirstPacket exponential(5s)
+config *.host[0].app[0].timeToNextPacket exponential(10s)
+config *.host[1].app[0].destNodeIds "\"0 3\""
+config *.host[1].app[0].srcNodeId 1
+config *.host[1].app[0].nextHopId 3
+config *.host[1].app[0].timeToFirstPacket exponential(5s)
+config *.host[1].app[0].timeToNextPacket exponential(10s)
+config *.host[2].app[0].destNodeIds "\"0 5\""
+config *.host[2].app[0].srcNodeId 2
+config *.host[2].app[0].nextHopId -1
+config *.host[2].app[0].timeToFirstPacket exponential(5s)
+config *.host[2].app[0].timeToNextPacket exponential(10s)
+config *.host[3].app[0].destNodeIds "\"1 4\""
+config *.host[3].app[0].srcNodeId 3
+config *.host[3].app[0].nextHopId 4
+config *.host[3].app[0].timeToFirstPacket exponential(5s)
+config *.host[3].app[0].timeToNextPacket exponential(10s)
+config *.host[4].app[0].destNodeIds "\"3 5\""
+config *.host[4].app[0].srcNodeId 4
+config *.host[4].app[0].nextHopId 5
+config *.host[4].app[0].timeToFirstPacket exponential(5s)
+config *.host[4].app[0].timeToNextPacket exponential(10s)
+config *.host[5].app[0].destNodeIds "\"4 2 7 11\""
+config *.host[5].app[0].srcNodeId 5
+config *.host[5].app[0].nextHopId 2
+config *.host[5].app[0].timeToFirstPacket exponential(5s)
+config *.host[5].app[0].timeToNextPacket exponential(10s)
+config *.host[6].app[0].destNodeIds "\"7\""
+config *.host[6].app[0].srcNodeId 6
+config *.host[6].app[0].nextHopId 7
+config *.host[6].app[0].timeToFirstPacket exponential(5s)
+config *.host[6].app[0].timeToNextPacket exponential(10s)
+config *.host[7].app[0].destNodeIds "\"6 5 8\""
+config *.host[7].app[0].srcNodeId 7
+config *.host[7].app[0].nextHopId 5
+config *.host[7].app[0].timeToFirstPacket exponential(5s)
+config *.host[7].app[0].timeToNextPacket exponential(10s)
+config *.host[8].app[0].destNodeIds "\"7\""
+config *.host[8].app[0].srcNodeId 8
+config *.host[8].app[0].nextHopId 7
+config *.host[8].app[0].timeToFirstPacket exponential(5s)
+config *.host[8].app[0].timeToNextPacket exponential(10s)
+config *.host[9].app[0].destNodeIds "\"11 10\""
+config *.host[9].app[0].srcNodeId 9
+config *.host[9].app[0].nextHopId 11
+config *.host[9].app[0].timeToFirstPacket exponential(5s)
+config *.host[9].app[0].timeToNextPacket exponential(10s)
+config *.host[10].app[0].destNodeIds "\"9\""
+config *.host[10].app[0].srcNodeId 10
+config *.host[10].app[0].nextHopId 9
+config *.host[10].app[0].timeToFirstPacket exponential(5s)
+config *.host[10].app[0].timeToNextPacket exponential(10s)
+config *.host[11].app[0].destNodeIds "\"9 5 12\""
+config *.host[11].app[0].srcNodeId 11
+config *.host[11].app[0].nextHopId 5
+config *.host[11].app[0].timeToFirstPacket exponential(5s)
+config *.host[11].app[0].timeToNextPacket exponential(10s)
+config *.host[12].app[0].destNodeIds "\"11 13 15\""
+config *.host[12].app[0].srcNodeId 12
+config *.host[12].app[0].nextHopId 11
+config *.host[12].app[0].timeToFirstPacket exponential(5s)
+config *.host[12].app[0].timeToNextPacket exponential(10s)
+config *.host[13].app[0].destNodeIds "\"12 14\""
+config *.host[13].app[0].srcNodeId 13
+config *.host[13].app[0].nextHopId 12
+config *.host[13].app[0].timeToFirstPacket exponential(5s)
+config *.host[13].app[0].timeToNextPacket exponential(10s)
+config *.host[14].app[0].destNodeIds "\"13\""
+config *.host[14].app[0].srcNodeId 14
+config *.host[14].app[0].nextHopId 13
+config *.host[14].app[0].timeToFirstPacket exponential(5s)
+config *.host[14].app[0].timeToNextPacket exponential(10s)
+config *.host[15].app[0].destNodeIds "\"12 16 18\""
+config *.host[15].app[0].srcNodeId 15
+config *.host[15].app[0].nextHopId 12
+config *.host[15].app[0].timeToFirstPacket exponential(5s)
+config *.host[15].app[0].timeToNextPacket exponential(10s)
+config *.host[16].app[0].destNodeIds "\"15 17\""
+config *.host[16].app[0].srcNodeId 16
+config *.host[16].app[0].nextHopId 15
+config *.host[16].app[0].timeToFirstPacket exponential(5s)
+config *.host[16].app[0].timeToNextPacket exponential(10s)
+config *.host[17].app[0].destNodeIds "\"16\""
+config *.host[17].app[0].srcNodeId 17
+config *.host[17].app[0].nextHopId 16
+config *.host[17].app[0].timeToFirstPacket exponential(5s)
+config *.host[17].app[0].timeToNextPacket exponential(10s)
+config *.host[18].app[0].destNodeIds "\"15 19\""
+config *.host[18].app[0].srcNodeId 18
+config *.host[18].app[0].nextHopId 15
+config *.host[18].app[0].timeToFirstPacket exponential(5s)
+config *.host[18].app[0].timeToNextPacket exponential(10s)
+config *.host[19].app[0].destNodeIds "\"18\""
+config *.host[19].app[0].srcNodeId 19
+config *.host[19].app[0].nextHopId 18
+config *.host[19].app[0].timeToFirstPacket exponential(5s)
+config *.host[19].app[0].timeToNextPacket exponential(10s)
+config *.radioMedium.pathLoss.frequency 915000000
+config *.host[*].mobility.typename StationaryMobility
+config *.host[*].mobility.initFromDisplayString false
+config *.host[*].gatewayX 250
+config *.host[*].gatewayY 150
+config *.host[*].maxGatewayDistance 2000
+config *.host[*].app[0].numberOfPacketsToSend 0
+config *.radioMedium.typename LoRaMedium
+config *.radioMedium.pathLoss.typename TrueRays
+config *.radioMedium.maxTransmissionDuration 100s
+config *.radioMedium.mediumLimitCache.maxTransmissionDuration 100s
+config *.radioMedium.backgroundNoise.typename IsotropicScalarBackgroundNoise
+config *.radioMedium.backgroundNoise.power -117dBm
+config *.radioMedium.pathLoss.width_tunnel 4
+config *.radioMedium.pathLoss.height_tunnel 4
+config *.radioMedium.pathLoss.gain_tx 1.5849
+config *.radioMedium.pathLoss.gain_tx_tr 0.2
+config *.radioMedium.pathLoss.power_tx 2.5
+config *.radioMedium.pathLoss.p_tx_radio 0.025119W
+config *.host[*].LoRaNic.queue.typename DropTailQueue
+config *.host[*].LoRaNic.queue.packetCapacity -1
+config *.host[*].LoRaNic.radio.receiver.typename LoRaReceiver
+config *.host[*].LoRaNic.radio.receiver.energyDetection -117dBm
+config *.host[*].LoRaNic.radio.receiver.sensitivity -117dBm
+config *.gateway.numUdpApps 1
+config *.gateway.packetForwarder.destAddresses "\"networkServer\""
+config *.gateway.packetForwarder.localPort 2000
+config *.gateway.packetForwarder.destPort 1000
+config *.gateway.packetForwarder.indexNumber 0
+config *.networkServer.numApps 1
+config *.networkServer.app[0].typename NetworkServerApp
+config *.networkServer.app[0].destAddresses "\"gateway\""
+config *.networkServer.app[0].destPort 2000
+config *.networkServer.app[0].localPort 1000
+config *.networkServer.app[0].adrMethod "\"avg\""
+config **.energySourceModule "\"\""
+config **.energyStorageModule "\"\""
+config **.energyConsumerModule "\"\""
+config *.visualizer.mediumVisualizer.displaySignals true
+config **.host[*].displayString "\"i=misc/sensor\""
+config **.gateway.displayString "\"i=misc/antennatower\""
+config **.networkServer.displayString "\"i=misc/server\""
+config *.visualizer.physicalLinkVisualizer.displayLinks true
+config *.visualizer.physicalLinkVisualizer.packetFilter "\"DataFrame*\""
+config *.visualizer.dataLinkVisualizer.displayLinks true
+config *.radioMedium.*.result-recording-modes default,+vector
+config *.host[*].LoRaNic.radio.*.result-recording-modes default,+vector
+config **.snir:vector.result-recording-modes +vector
+
+vector 0 Wireless3.networkServer.eth[0].queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 1 Wireless3.networkServer.eth[0].queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 2 Wireless3.networkServer.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 3 Wireless3.networkServer.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 4 Wireless3.networkServer.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 5 Wireless3.gateway.eth[0].queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 6 Wireless3.gateway.eth[0].queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 7 Wireless3.gateway.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetSentToUpper
+attr title "packets passed up, count"
+vector 8 Wireless3.gateway.udp droppedPkWrongPort:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsNoPortFound(packetDropped)
+attr title "packets dropped (wrong port), count"
+vector 9 Wireless3.gateway.udp droppedPkBadChecksum:vector(count) ETV
+attr interpolationmode none
+attr recordingmode vector(count)
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packets dropped (checksum error), count"
+vector 10 Wireless3.host[0].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 11 Wireless3.host[0].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 12 Wireless3.host[1].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 13 Wireless3.host[1].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 14 Wireless3.host[2].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 15 Wireless3.host[2].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 16 Wireless3.host[3].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 17 Wireless3.host[3].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 18 Wireless3.host[4].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 19 Wireless3.host[4].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 20 Wireless3.host[5].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 21 Wireless3.host[5].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 22 Wireless3.host[6].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 23 Wireless3.host[6].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 24 Wireless3.host[7].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 25 Wireless3.host[7].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 26 Wireless3.host[8].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 27 Wireless3.host[8].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 28 Wireless3.host[9].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 29 Wireless3.host[9].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 30 Wireless3.host[10].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 31 Wireless3.host[10].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 32 Wireless3.host[11].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 33 Wireless3.host[11].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 34 Wireless3.host[12].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 35 Wireless3.host[12].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 36 Wireless3.host[13].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 37 Wireless3.host[13].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 38 Wireless3.host[14].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 39 Wireless3.host[14].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 40 Wireless3.host[15].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 41 Wireless3.host[15].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 42 Wireless3.host[16].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 43 Wireless3.host[16].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 44 Wireless3.host[17].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 45 Wireless3.host[17].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 46 Wireless3.host[18].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 47 Wireless3.host[18].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 48 Wireless3.host[19].LoRaNic.queue queueLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + count(packetPushStarted) - count(packetPulled) - count(packetRemoved) - count(packetDropped)))"
+attr title "queue length"
+attr unit pk
+vector 49 Wireless3.host[19].LoRaNic.queue queueBitLength:vector ETV
+attr autoWarmupFilter false
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source "warmup(atomic(constant0(packetPushEnded) + sum(packetLength(packetPushStarted)) - sum(packetLength(packetPulled)) - sum(packetLength(packetRemoved)) - sum(packetLength(packetDropped))))"
+attr title "queue bit length"
+attr unit b
+vector 50 Wireless3.gateway.LoRaGWNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 51 Wireless3.host[0].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 52 Wireless3.host[1].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 53 Wireless3.host[2].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 54 Wireless3.host[3].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 55 Wireless3.host[4].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 56 Wireless3.host[5].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 57 Wireless3.host[6].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 58 Wireless3.host[7].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 59 Wireless3.host[8].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 60 Wireless3.host[9].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 61 Wireless3.host[10].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 62 Wireless3.host[11].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 63 Wireless3.host[12].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 64 Wireless3.host[13].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 65 Wireless3.host[14].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 66 Wireless3.host[15].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 67 Wireless3.host[16].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 68 Wireless3.host[17].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 69 Wireless3.host[18].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 70 Wireless3.host[19].LoRaNic.radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source radioModeChanged
+attr title "Radio mode"
+vector 71 Wireless3.gateway.LoRaGWNic.radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source receptionStateChanged
+attr title "Radio reception state"
+vector 72 Wireless3.gateway.LoRaGWNic.radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source transmissionStateChanged
+attr title "Radio transmission state"
+vector 73 Wireless3.host[4].app[0] "SF Vector" ETV
+vector 74 Wireless3.host[4].app[0] "TP Vector" ETV
+vector 75 Wireless3.host[4].LoRaNic.queue incomingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPushStarted)
+attr title "incoming packet lengths"
+attr unit b
+vector 76 Wireless3.host[4].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 77 Wireless3.host[4].LoRaNic.queue queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source queueingTime(packetPulled)
+attr title "queueing times"
+attr unit s
+vector 78 Wireless3.host[4].LoRaNic.queue outgoingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPulled)
+attr title "outgoing packet lengths"
+attr unit b
+vector 79 Wireless3.host[4].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 80 Wireless3.host[4].LoRaNic.radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source transmissionStateChanged
+attr title "Radio transmission state"
+vector 81 Wireless3.host[11].app[0] "SF Vector" ETV
+vector 82 Wireless3.host[11].app[0] "TP Vector" ETV
+vector 83 Wireless3.host[11].LoRaNic.queue incomingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPushStarted)
+attr title "incoming packet lengths"
+attr unit b
+vector 84 Wireless3.host[11].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 85 Wireless3.host[11].LoRaNic.queue queueingTime:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source queueingTime(packetPulled)
+attr title "queueing times"
+attr unit s
+vector 86 Wireless3.host[11].LoRaNic.queue outgoingPacketLengths:vector ETV
+attr interpolationmode none
+attr recordingmode vector
+attr source packetLength(packetPulled)
+attr title "outgoing packet lengths"
+attr unit b
+vector 87 Wireless3.host[11].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 88 Wireless3.host[11].LoRaNic.radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr recordingmode vector
+attr source transmissionStateChanged
+attr title "Radio transmission state"
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+0	0	0	0
+1	0	0	0
+1	0	0	0
+1	0	0	0
+1	0	0	0
+1	0	0	0
+2	0	0	0
+3	0	0	0
+4	0	0	0
+5	0	0	0
+5	0	0	0
+5	0	0	0
+5	0	0	0
+5	0	0	0
+6	0	0	0
+6	0	0	0
+6	0	0	0
+6	0	0	0
+6	0	0	0
+7	0	0	0
+8	0	0	0
+9	0	0	0
+10	0	0	0
+10	0	0	0
+10	0	0	0
+10	0	0	0
+10	0	0	0
+11	0	0	0
+11	0	0	0
+11	0	0	0
+11	0	0	0
+11	0	0	0
+12	0	0	0
+12	0	0	0
+12	0	0	0
+12	0	0	0
+12	0	0	0
+13	0	0	0
+13	0	0	0
+13	0	0	0
+13	0	0	0
+13	0	0	0
+14	0	0	0
+14	0	0	0
+14	0	0	0
+14	0	0	0
+14	0	0	0
+15	0	0	0
+15	0	0	0
+15	0	0	0
+15	0	0	0
+15	0	0	0
+16	0	0	0
+16	0	0	0
+16	0	0	0
+16	0	0	0
+16	0	0	0
+17	0	0	0
+17	0	0	0
+17	0	0	0
+17	0	0	0
+17	0	0	0
+18	0	0	0
+18	0	0	0
+18	0	0	0
+18	0	0	0
+18	0	0	0
+18	4	5.19079650332	0
+19	0	0	0
+19	0	0	0
+19	0	0	0
+19	0	0	0
+19	0	0	0
+19	4	5.19079650332	0
+20	0	0	0
+20	0	0	0
+20	0	0	0
+20	0	0	0
+20	0	0	0
+21	0	0	0
+21	0	0	0
+21	0	0	0
+21	0	0	0
+21	0	0	0
+22	0	0	0
+22	0	0	0
+22	0	0	0
+22	0	0	0
+22	0	0	0
+23	0	0	0
+23	0	0	0
+23	0	0	0
+23	0	0	0
+23	0	0	0
+24	0	0	0
+24	0	0	0
+24	0	0	0
+24	0	0	0
+24	0	0	0
+25	0	0	0
+25	0	0	0
+25	0	0	0
+25	0	0	0
+25	0	0	0
+26	0	0	0
+26	0	0	0
+26	0	0	0
+26	0	0	0
+26	0	0	0
+27	0	0	0
+27	0	0	0
+27	0	0	0
+27	0	0	0
+27	0	0	0
+28	0	0	0
+28	0	0	0
+28	0	0	0
+28	0	0	0
+28	0	0	0
+29	0	0	0
+29	0	0	0
+29	0	0	0
+29	0	0	0
+29	0	0	0
+30	0	0	0
+30	0	0	0
+30	0	0	0
+30	0	0	0
+30	0	0	0
+31	0	0	0
+31	0	0	0
+31	0	0	0
+31	0	0	0
+31	0	0	0
+32	0	0	0
+32	0	0	0
+32	0	0	0
+32	0	0	0
+32	0	0	0
+32	27	5.22306254154	0
+33	0	0	0
+33	0	0	0
+33	0	0	0
+33	0	0	0
+33	0	0	0
+33	27	5.22306254154	0
+34	0	0	0
+34	0	0	0
+34	0	0	0
+34	0	0	0
+34	0	0	0
+35	0	0	0
+35	0	0	0
+35	0	0	0
+35	0	0	0
+35	0	0	0
+36	0	0	0
+36	0	0	0
+36	0	0	0
+36	0	0	0
+36	0	0	0
+37	0	0	0
+37	0	0	0
+37	0	0	0
+37	0	0	0
+37	0	0	0
+38	0	0	0
+38	0	0	0
+38	0	0	0
+38	0	0	0
+38	0	0	0
+39	0	0	0
+39	0	0	0
+39	0	0	0
+39	0	0	0
+39	0	0	0
+40	0	0	0
+40	0	0	0
+40	0	0	0
+40	0	0	0
+40	0	0	0
+41	0	0	0
+41	0	0	0
+41	0	0	0
+41	0	0	0
+41	0	0	0
+42	0	0	0
+42	0	0	0
+42	0	0	0
+42	0	0	0
+42	0	0	0
+43	0	0	0
+43	0	0	0
+43	0	0	0
+43	0	0	0
+43	0	0	0
+44	0	0	0
+44	0	0	0
+44	0	0	0
+44	0	0	0
+44	0	0	0
+45	0	0	0
+45	0	0	0
+45	0	0	0
+45	0	0	0
+45	0	0	0
+46	0	0	0
+46	0	0	0
+46	0	0	0
+46	0	0	0
+46	0	0	0
+47	0	0	0
+47	0	0	0
+47	0	0	0
+47	0	0	0
+47	0	0	0
+48	0	0	0
+48	0	0	0
+48	0	0	0
+48	0	0	0
+48	0	0	0
+49	0	0	0
+49	0	0	0
+49	0	0	0
+49	0	0	0
+49	0	0	0
+50	0	0	0
+50	0	0	0
+50	0	0	4
+51	0	0	0
+51	0	0	0
+51	0	0	1
+52	0	0	0
+52	0	0	0
+52	0	0	1
+53	0	0	0
+53	0	0	0
+53	0	0	1
+54	0	0	0
+54	0	0	0
+54	0	0	1
+55	0	0	0
+55	0	0	0
+55	0	0	1
+55	4	5.19079650332	3
+56	0	0	0
+56	0	0	0
+56	0	0	1
+57	0	0	0
+57	0	0	0
+57	0	0	1
+58	0	0	0
+58	0	0	0
+58	0	0	1
+59	0	0	0
+59	0	0	0
+59	0	0	1
+60	0	0	0
+60	0	0	0
+60	0	0	1
+61	0	0	0
+61	0	0	0
+61	0	0	1
+62	0	0	0
+62	0	0	0
+62	0	0	1
+62	27	5.22306254154	3
+63	0	0	0
+63	0	0	0
+63	0	0	1
+64	0	0	0
+64	0	0	0
+64	0	0	1
+65	0	0	0
+65	0	0	0
+65	0	0	1
+66	0	0	0
+66	0	0	0
+66	0	0	1
+67	0	0	0
+67	0	0	0
+67	0	0	1
+68	0	0	0
+68	0	0	0
+68	0	0	1
+69	0	0	0
+69	0	0	0
+69	0	0	1
+70	0	0	0
+70	0	0	0
+70	0	0	1
+71	0	0	1
+72	0	0	1
+73	3	5.19079650332	10
+74	3	5.19079650332	14
+75	4	5.19079650332	80
+76	4	0.1	0
+76	4	0.2	0
+76	4	0.3	0
+76	4	0.4	0
+76	4	0.5	0
+76	4	0.6	0
+76	4	0.7	0
+76	4	0.8	0
+76	4	0.9	0
+76	4	1	0
+76	4	1.1	0
+76	4	1.2	0
+76	4	1.3	0
+76	4	1.4	0
+76	4	1.5	0
+76	4	1.6	0
+76	4	1.7	0
+76	4	1.8	0
+76	4	1.9	0
+76	4	2	0
+76	4	2.1	0
+76	4	2.2	0
+76	4	2.3	0
+76	4	2.4	0
+76	4	2.5	0
+76	4	2.6	0
+76	4	2.7	0
+76	4	2.8	0
+76	4	2.9	0
+76	4	3	0
+76	4	3.1	0
+76	4	3.2	0
+76	4	3.3	0
+76	4	3.4	0
+76	4	3.5	0
+76	4	3.6	0
+76	4	3.7	0
+76	4	3.8	0
+76	4	3.9	0
+76	4	4	0
+76	4	4.1	0
+76	4	4.2	0
+76	4	4.3	0
+76	4	4.4	0
+76	4	4.5	0
+76	4	4.6	0
+76	4	4.7	0
+76	4	4.8	0
+76	4	4.9	0
+76	4	5	0
+76	4	5.1	0
+77	4	5.19079650332	0
+78	4	5.19079650332	80
+79	4	0.1	0
+79	4	0.2	0
+79	4	0.3	0
+79	4	0.4	0
+79	4	0.5	0
+79	4	0.6	0
+79	4	0.7	0
+79	4	0.8	0
+79	4	0.9	0
+79	4	1	0
+79	4	1.1	0
+79	4	1.2	0
+79	4	1.3	0
+79	4	1.4	0
+79	4	1.5	0
+79	4	1.6	0
+79	4	1.7	0
+79	4	1.8	0
+79	4	1.9	0
+79	4	2	0
+79	4	2.1	0
+79	4	2.2	0
+79	4	2.3	0
+79	4	2.4	0
+79	4	2.5	0
+79	4	2.6	0
+79	4	2.7	0
+79	4	2.8	0
+79	4	2.9	0
+79	4	3	0
+79	4	3.1	0
+79	4	3.2	0
+79	4	3.3	0
+79	4	3.4	0
+79	4	3.5	0
+79	4	3.6	0
+79	4	3.7	0
+79	4	3.8	0
+79	4	3.9	0
+79	4	4	0
+79	4	4.1	0
+79	4	4.2	0
+79	4	4.3	0
+79	4	4.4	0
+79	4	4.5	0
+79	4	4.6	0
+79	4	4.7	0
+79	4	4.8	0
+79	4	4.9	0
+79	4	5	0
+79	4	5.1	0
+80	4	5.19079650332	1
+80	5	5.19079650332	2
+81	26	5.22306254154	10
+82	26	5.22306254154	14
+83	27	5.22306254154	80
+84	27	0.1	0
+84	27	0.2	0
+84	27	0.3	0
+84	27	0.4	0
+84	27	0.5	0
+84	27	0.6	0
+84	27	0.7	0
+84	27	0.8	0
+84	27	0.9	0
+84	27	1	0
+84	27	1.1	0
+84	27	1.2	0
+84	27	1.3	0
+84	27	1.4	0
+84	27	1.5	0
+84	27	1.6	0
+84	27	1.7	0
+84	27	1.8	0
+84	27	1.9	0
+84	27	2	0
+84	27	2.1	0
+84	27	2.2	0
+84	27	2.3	0
+84	27	2.4	0
+84	27	2.5	0
+84	27	2.6	0
+84	27	2.7	0
+84	27	2.8	0
+84	27	2.9	0
+84	27	3	0
+84	27	3.1	0
+84	27	3.2	0
+84	27	3.3	0
+84	27	3.4	0
+84	27	3.5	0
+84	27	3.6	0
+84	27	3.7	0
+84	27	3.8	0
+84	27	3.9	0
+84	27	4	0
+84	27	4.1	0
+84	27	4.2	0
+84	27	4.3	0
+84	27	4.4	0
+84	27	4.5	0
+84	27	4.6	0
+84	27	4.7	0
+84	27	4.8	0
+84	27	4.9	0
+84	27	5	0
+84	27	5.1	0
+84	27	5.2	0
+85	27	5.22306254154	0
+86	27	5.22306254154	80
+87	27	0.1	0
+87	27	0.2	0
+87	27	0.3	0
+87	27	0.4	0
+87	27	0.5	0
+87	27	0.6	0
+87	27	0.7	0
+87	27	0.8	0
+87	27	0.9	0
+87	27	1	0
+87	27	1.1	0
+87	27	1.2	0
+87	27	1.3	0
+87	27	1.4	0
+87	27	1.5	0
+87	27	1.6	0
+87	27	1.7	0
+87	27	1.8	0
+87	27	1.9	0
+87	27	2	0
+87	27	2.1	0
+87	27	2.2	0
+87	27	2.3	0
+87	27	2.4	0
+87	27	2.5	0
+87	27	2.6	0
+87	27	2.7	0
+87	27	2.8	0
+87	27	2.9	0
+87	27	3	0
+87	27	3.1	0
+87	27	3.2	0
+87	27	3.3	0
+87	27	3.4	0
+87	27	3.5	0
+87	27	3.6	0
+87	27	3.7	0
+87	27	3.8	0
+87	27	3.9	0
+87	27	4	0
+87	27	4.1	0
+87	27	4.2	0
+87	27	4.3	0
+87	27	4.4	0
+87	27	4.5	0
+87	27	4.6	0
+87	27	4.7	0
+87	27	4.8	0
+87	27	4.9	0
+87	27	5	0
+87	27	5.1	0
+87	27	5.2	0
+88	27	5.22306254154	1
+88	28	5.22306254154	2
+vector 89 Wireless3.networkServer.eth[0].queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 90 Wireless3.networkServer.eth[0].queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 91 Wireless3.gateway.eth[0].queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 92 Wireless3.gateway.eth[0].queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 93 Wireless3.host[0].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 94 Wireless3.host[0].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 95 Wireless3.host[1].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 96 Wireless3.host[1].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 97 Wireless3.host[2].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 98 Wireless3.host[2].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 99 Wireless3.host[3].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 100 Wireless3.host[3].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 101 Wireless3.host[5].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 102 Wireless3.host[5].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 103 Wireless3.host[6].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 104 Wireless3.host[6].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 105 Wireless3.host[7].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 106 Wireless3.host[7].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 107 Wireless3.host[8].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 108 Wireless3.host[8].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 109 Wireless3.host[9].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 110 Wireless3.host[9].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 111 Wireless3.host[10].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 112 Wireless3.host[10].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 113 Wireless3.host[12].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 114 Wireless3.host[12].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 115 Wireless3.host[13].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 116 Wireless3.host[13].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 117 Wireless3.host[14].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 118 Wireless3.host[14].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 119 Wireless3.host[15].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 120 Wireless3.host[15].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 121 Wireless3.host[16].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 122 Wireless3.host[16].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 123 Wireless3.host[17].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 124 Wireless3.host[17].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 125 Wireless3.host[18].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 126 Wireless3.host[18].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+vector 127 Wireless3.host[19].LoRaNic.queue outgoingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPulled)
+attr title "outgoing datarate"
+attr unit bps
+vector 128 Wireless3.host[19].LoRaNic.queue incomingDataRate:vector ETV
+attr interpolationmode linear
+attr recordingmode vector
+attr source throughput(packetPushStarted)
+attr title "incoming datarate"
+attr unit bps
+76	42	5.2	800
+76	42	5.22306330397	0
+79	42	5.2	800
+79	42	5.22306330397	0
+84	42	5.22306330397	3468.7137672929
+87	42	5.22306330397	3468.7137672929
+89	42	0.1	0
+89	42	0.2	0
+89	42	0.3	0
+89	42	0.4	0
+89	42	0.5	0
+89	42	0.6	0
+89	42	0.7	0
+89	42	0.8	0
+89	42	0.9	0
+89	42	1	0
+89	42	1.1	0
+89	42	1.2	0
+89	42	1.3	0
+89	42	1.4	0
+89	42	1.5	0
+89	42	1.6	0
+89	42	1.7	0
+89	42	1.8	0
+89	42	1.9	0
+89	42	2	0
+89	42	2.1	0
+89	42	2.2	0
+89	42	2.3	0
+89	42	2.4	0
+89	42	2.5	0
+89	42	2.6	0
+89	42	2.7	0
+89	42	2.8	0
+89	42	2.9	0
+89	42	3	0
+89	42	3.1	0
+89	42	3.2	0
+89	42	3.3	0
+89	42	3.4	0
+89	42	3.5	0
+89	42	3.6	0
+89	42	3.7	0
+89	42	3.8	0
+89	42	3.9	0
+89	42	4	0
+89	42	4.1	0
+89	42	4.2	0
+89	42	4.3	0
+89	42	4.4	0
+89	42	4.5	0
+89	42	4.6	0
+89	42	4.7	0
+89	42	4.8	0
+89	42	4.9	0
+89	42	5	0
+89	42	5.1	0
+89	42	5.2	0
+89	42	5.22306330397	0
+90	42	0.1	0
+90	42	0.2	0
+90	42	0.3	0
+90	42	0.4	0
+90	42	0.5	0
+90	42	0.6	0
+90	42	0.7	0
+90	42	0.8	0
+90	42	0.9	0
+90	42	1	0
+90	42	1.1	0
+90	42	1.2	0
+90	42	1.3	0
+90	42	1.4	0
+90	42	1.5	0
+90	42	1.6	0
+90	42	1.7	0
+90	42	1.8	0
+90	42	1.9	0
+90	42	2	0
+90	42	2.1	0
+90	42	2.2	0
+90	42	2.3	0
+90	42	2.4	0
+90	42	2.5	0
+90	42	2.6	0
+90	42	2.7	0
+90	42	2.8	0
+90	42	2.9	0
+90	42	3	0
+90	42	3.1	0
+90	42	3.2	0
+90	42	3.3	0
+90	42	3.4	0
+90	42	3.5	0
+90	42	3.6	0
+90	42	3.7	0
+90	42	3.8	0
+90	42	3.9	0
+90	42	4	0
+90	42	4.1	0
+90	42	4.2	0
+90	42	4.3	0
+90	42	4.4	0
+90	42	4.5	0
+90	42	4.6	0
+90	42	4.7	0
+90	42	4.8	0
+90	42	4.9	0
+90	42	5	0
+90	42	5.1	0
+90	42	5.2	0
+90	42	5.22306330397	0
+91	42	0.1	0
+91	42	0.2	0
+91	42	0.3	0
+91	42	0.4	0
+91	42	0.5	0
+91	42	0.6	0
+91	42	0.7	0
+91	42	0.8	0
+91	42	0.9	0
+91	42	1	0
+91	42	1.1	0
+91	42	1.2	0
+91	42	1.3	0
+91	42	1.4	0
+91	42	1.5	0
+91	42	1.6	0
+91	42	1.7	0
+91	42	1.8	0
+91	42	1.9	0
+91	42	2	0
+91	42	2.1	0
+91	42	2.2	0
+91	42	2.3	0
+91	42	2.4	0
+91	42	2.5	0
+91	42	2.6	0
+91	42	2.7	0
+91	42	2.8	0
+91	42	2.9	0
+91	42	3	0
+91	42	3.1	0
+91	42	3.2	0
+91	42	3.3	0
+91	42	3.4	0
+91	42	3.5	0
+91	42	3.6	0
+91	42	3.7	0
+91	42	3.8	0
+91	42	3.9	0
+91	42	4	0
+91	42	4.1	0
+91	42	4.2	0
+91	42	4.3	0
+91	42	4.4	0
+91	42	4.5	0
+91	42	4.6	0
+91	42	4.7	0
+91	42	4.8	0
+91	42	4.9	0
+91	42	5	0
+91	42	5.1	0
+91	42	5.2	0
+91	42	5.22306330397	0
+92	42	0.1	0
+92	42	0.2	0
+92	42	0.3	0
+92	42	0.4	0
+92	42	0.5	0
+92	42	0.6	0
+92	42	0.7	0
+92	42	0.8	0
+92	42	0.9	0
+92	42	1	0
+92	42	1.1	0
+92	42	1.2	0
+92	42	1.3	0
+92	42	1.4	0
+92	42	1.5	0
+92	42	1.6	0
+92	42	1.7	0
+92	42	1.8	0
+92	42	1.9	0
+92	42	2	0
+92	42	2.1	0
+92	42	2.2	0
+92	42	2.3	0
+92	42	2.4	0
+92	42	2.5	0
+92	42	2.6	0
+92	42	2.7	0
+92	42	2.8	0
+92	42	2.9	0
+92	42	3	0
+92	42	3.1	0
+92	42	3.2	0
+92	42	3.3	0
+92	42	3.4	0
+92	42	3.5	0
+92	42	3.6	0
+92	42	3.7	0
+92	42	3.8	0
+92	42	3.9	0
+92	42	4	0
+92	42	4.1	0
+92	42	4.2	0
+92	42	4.3	0
+92	42	4.4	0
+92	42	4.5	0
+92	42	4.6	0
+92	42	4.7	0
+92	42	4.8	0
+92	42	4.9	0
+92	42	5	0
+92	42	5.1	0
+92	42	5.2	0
+92	42	5.22306330397	0
+93	42	0.1	0
+93	42	0.2	0
+93	42	0.3	0
+93	42	0.4	0
+93	42	0.5	0
+93	42	0.6	0
+93	42	0.7	0
+93	42	0.8	0
+93	42	0.9	0
+93	42	1	0
+93	42	1.1	0
+93	42	1.2	0
+93	42	1.3	0
+93	42	1.4	0
+93	42	1.5	0
+93	42	1.6	0
+93	42	1.7	0
+93	42	1.8	0
+93	42	1.9	0
+93	42	2	0
+93	42	2.1	0
+93	42	2.2	0
+93	42	2.3	0
+93	42	2.4	0
+93	42	2.5	0
+93	42	2.6	0
+93	42	2.7	0
+93	42	2.8	0
+93	42	2.9	0
+93	42	3	0
+93	42	3.1	0
+93	42	3.2	0
+93	42	3.3	0
+93	42	3.4	0
+93	42	3.5	0
+93	42	3.6	0
+93	42	3.7	0
+93	42	3.8	0
+93	42	3.9	0
+93	42	4	0
+93	42	4.1	0
+93	42	4.2	0
+93	42	4.3	0
+93	42	4.4	0
+93	42	4.5	0
+93	42	4.6	0
+93	42	4.7	0
+93	42	4.8	0
+93	42	4.9	0
+93	42	5	0
+93	42	5.1	0
+93	42	5.2	0
+93	42	5.22306330397	0
+94	42	0.1	0
+94	42	0.2	0
+94	42	0.3	0
+94	42	0.4	0
+94	42	0.5	0
+94	42	0.6	0
+94	42	0.7	0
+94	42	0.8	0
+94	42	0.9	0
+94	42	1	0
+94	42	1.1	0
+94	42	1.2	0
+94	42	1.3	0
+94	42	1.4	0
+94	42	1.5	0
+94	42	1.6	0
+94	42	1.7	0
+94	42	1.8	0
+94	42	1.9	0
+94	42	2	0
+94	42	2.1	0
+94	42	2.2	0
+94	42	2.3	0
+94	42	2.4	0
+94	42	2.5	0
+94	42	2.6	0
+94	42	2.7	0
+94	42	2.8	0
+94	42	2.9	0
+94	42	3	0
+94	42	3.1	0
+94	42	3.2	0
+94	42	3.3	0
+94	42	3.4	0
+94	42	3.5	0
+94	42	3.6	0
+94	42	3.7	0
+94	42	3.8	0
+94	42	3.9	0
+94	42	4	0
+94	42	4.1	0
+94	42	4.2	0
+94	42	4.3	0
+94	42	4.4	0
+94	42	4.5	0
+94	42	4.6	0
+94	42	4.7	0
+94	42	4.8	0
+94	42	4.9	0
+94	42	5	0
+94	42	5.1	0
+94	42	5.2	0
+94	42	5.22306330397	0
+95	42	0.1	0
+95	42	0.2	0
+95	42	0.3	0
+95	42	0.4	0
+95	42	0.5	0
+95	42	0.6	0
+95	42	0.7	0
+95	42	0.8	0
+95	42	0.9	0
+95	42	1	0
+95	42	1.1	0
+95	42	1.2	0
+95	42	1.3	0
+95	42	1.4	0
+95	42	1.5	0
+95	42	1.6	0
+95	42	1.7	0
+95	42	1.8	0
+95	42	1.9	0
+95	42	2	0
+95	42	2.1	0
+95	42	2.2	0
+95	42	2.3	0
+95	42	2.4	0
+95	42	2.5	0
+95	42	2.6	0
+95	42	2.7	0
+95	42	2.8	0
+95	42	2.9	0
+95	42	3	0
+95	42	3.1	0
+95	42	3.2	0
+95	42	3.3	0
+95	42	3.4	0
+95	42	3.5	0
+95	42	3.6	0
+95	42	3.7	0
+95	42	3.8	0
+95	42	3.9	0
+95	42	4	0
+95	42	4.1	0
+95	42	4.2	0
+95	42	4.3	0
+95	42	4.4	0
+95	42	4.5	0
+95	42	4.6	0
+95	42	4.7	0
+95	42	4.8	0
+95	42	4.9	0
+95	42	5	0
+95	42	5.1	0
+95	42	5.2	0
+95	42	5.22306330397	0
+96	42	0.1	0
+96	42	0.2	0
+96	42	0.3	0
+96	42	0.4	0
+96	42	0.5	0
+96	42	0.6	0
+96	42	0.7	0
+96	42	0.8	0
+96	42	0.9	0
+96	42	1	0
+96	42	1.1	0
+96	42	1.2	0
+96	42	1.3	0
+96	42	1.4	0
+96	42	1.5	0
+96	42	1.6	0
+96	42	1.7	0
+96	42	1.8	0
+96	42	1.9	0
+96	42	2	0
+96	42	2.1	0
+96	42	2.2	0
+96	42	2.3	0
+96	42	2.4	0
+96	42	2.5	0
+96	42	2.6	0
+96	42	2.7	0
+96	42	2.8	0
+96	42	2.9	0
+96	42	3	0
+96	42	3.1	0
+96	42	3.2	0
+96	42	3.3	0
+96	42	3.4	0
+96	42	3.5	0
+96	42	3.6	0
+96	42	3.7	0
+96	42	3.8	0
+96	42	3.9	0
+96	42	4	0
+96	42	4.1	0
+96	42	4.2	0
+96	42	4.3	0
+96	42	4.4	0
+96	42	4.5	0
+96	42	4.6	0
+96	42	4.7	0
+96	42	4.8	0
+96	42	4.9	0
+96	42	5	0
+96	42	5.1	0
+96	42	5.2	0
+96	42	5.22306330397	0
+97	42	0.1	0
+97	42	0.2	0
+97	42	0.3	0
+97	42	0.4	0
+97	42	0.5	0
+97	42	0.6	0
+97	42	0.7	0
+97	42	0.8	0
+97	42	0.9	0
+97	42	1	0
+97	42	1.1	0
+97	42	1.2	0
+97	42	1.3	0
+97	42	1.4	0
+97	42	1.5	0
+97	42	1.6	0
+97	42	1.7	0
+97	42	1.8	0
+97	42	1.9	0
+97	42	2	0
+97	42	2.1	0
+97	42	2.2	0
+97	42	2.3	0
+97	42	2.4	0
+97	42	2.5	0
+97	42	2.6	0
+97	42	2.7	0
+97	42	2.8	0
+97	42	2.9	0
+97	42	3	0
+97	42	3.1	0
+97	42	3.2	0
+97	42	3.3	0
+97	42	3.4	0
+97	42	3.5	0
+97	42	3.6	0
+97	42	3.7	0
+97	42	3.8	0
+97	42	3.9	0
+97	42	4	0
+97	42	4.1	0
+97	42	4.2	0
+97	42	4.3	0
+97	42	4.4	0
+97	42	4.5	0
+97	42	4.6	0
+97	42	4.7	0
+97	42	4.8	0
+97	42	4.9	0
+97	42	5	0
+97	42	5.1	0
+97	42	5.2	0
+97	42	5.22306330397	0
+98	42	0.1	0
+98	42	0.2	0
+98	42	0.3	0
+98	42	0.4	0
+98	42	0.5	0
+98	42	0.6	0
+98	42	0.7	0
+98	42	0.8	0
+98	42	0.9	0
+98	42	1	0
+98	42	1.1	0
+98	42	1.2	0
+98	42	1.3	0
+98	42	1.4	0
+98	42	1.5	0
+98	42	1.6	0
+98	42	1.7	0
+98	42	1.8	0
+98	42	1.9	0
+98	42	2	0
+98	42	2.1	0
+98	42	2.2	0
+98	42	2.3	0
+98	42	2.4	0
+98	42	2.5	0
+98	42	2.6	0
+98	42	2.7	0
+98	42	2.8	0
+98	42	2.9	0
+98	42	3	0
+98	42	3.1	0
+98	42	3.2	0
+98	42	3.3	0
+98	42	3.4	0
+98	42	3.5	0
+98	42	3.6	0
+98	42	3.7	0
+98	42	3.8	0
+98	42	3.9	0
+98	42	4	0
+98	42	4.1	0
+98	42	4.2	0
+98	42	4.3	0
+98	42	4.4	0
+98	42	4.5	0
+98	42	4.6	0
+98	42	4.7	0
+98	42	4.8	0
+98	42	4.9	0
+98	42	5	0
+98	42	5.1	0
+98	42	5.2	0
+98	42	5.22306330397	0
+99	42	0.1	0
+99	42	0.2	0
+99	42	0.3	0
+99	42	0.4	0
+99	42	0.5	0
+99	42	0.6	0
+99	42	0.7	0
+99	42	0.8	0
+99	42	0.9	0
+99	42	1	0
+99	42	1.1	0
+99	42	1.2	0
+99	42	1.3	0
+99	42	1.4	0
+99	42	1.5	0
+99	42	1.6	0
+99	42	1.7	0
+99	42	1.8	0
+99	42	1.9	0
+99	42	2	0
+99	42	2.1	0
+99	42	2.2	0
+99	42	2.3	0
+99	42	2.4	0
+99	42	2.5	0
+99	42	2.6	0
+99	42	2.7	0
+99	42	2.8	0
+99	42	2.9	0
+99	42	3	0
+99	42	3.1	0
+99	42	3.2	0
+99	42	3.3	0
+99	42	3.4	0
+99	42	3.5	0
+99	42	3.6	0
+99	42	3.7	0
+99	42	3.8	0
+99	42	3.9	0
+99	42	4	0
+99	42	4.1	0
+99	42	4.2	0
+99	42	4.3	0
+99	42	4.4	0
+99	42	4.5	0
+99	42	4.6	0
+99	42	4.7	0
+99	42	4.8	0
+99	42	4.9	0
+99	42	5	0
+99	42	5.1	0
+99	42	5.2	0
+99	42	5.22306330397	0
+100	42	0.1	0
+100	42	0.2	0
+100	42	0.3	0
+100	42	0.4	0
+100	42	0.5	0
+100	42	0.6	0
+100	42	0.7	0
+100	42	0.8	0
+100	42	0.9	0
+100	42	1	0
+100	42	1.1	0
+100	42	1.2	0
+100	42	1.3	0
+100	42	1.4	0
+100	42	1.5	0
+100	42	1.6	0
+100	42	1.7	0
+100	42	1.8	0
+100	42	1.9	0
+100	42	2	0
+100	42	2.1	0
+100	42	2.2	0
+100	42	2.3	0
+100	42	2.4	0
+100	42	2.5	0
+100	42	2.6	0
+100	42	2.7	0
+100	42	2.8	0
+100	42	2.9	0
+100	42	3	0
+100	42	3.1	0
+100	42	3.2	0
+100	42	3.3	0
+100	42	3.4	0
+100	42	3.5	0
+100	42	3.6	0
+100	42	3.7	0
+100	42	3.8	0
+100	42	3.9	0
+100	42	4	0
+100	42	4.1	0
+100	42	4.2	0
+100	42	4.3	0
+100	42	4.4	0
+100	42	4.5	0
+100	42	4.6	0
+100	42	4.7	0
+100	42	4.8	0
+100	42	4.9	0
+100	42	5	0
+100	42	5.1	0
+100	42	5.2	0
+100	42	5.22306330397	0
+101	42	0.1	0
+101	42	0.2	0
+101	42	0.3	0
+101	42	0.4	0
+101	42	0.5	0
+101	42	0.6	0
+101	42	0.7	0
+101	42	0.8	0
+101	42	0.9	0
+101	42	1	0
+101	42	1.1	0
+101	42	1.2	0
+101	42	1.3	0
+101	42	1.4	0
+101	42	1.5	0
+101	42	1.6	0
+101	42	1.7	0
+101	42	1.8	0
+101	42	1.9	0
+101	42	2	0
+101	42	2.1	0
+101	42	2.2	0
+101	42	2.3	0
+101	42	2.4	0
+101	42	2.5	0
+101	42	2.6	0
+101	42	2.7	0
+101	42	2.8	0
+101	42	2.9	0
+101	42	3	0
+101	42	3.1	0
+101	42	3.2	0
+101	42	3.3	0
+101	42	3.4	0
+101	42	3.5	0
+101	42	3.6	0
+101	42	3.7	0
+101	42	3.8	0
+101	42	3.9	0
+101	42	4	0
+101	42	4.1	0
+101	42	4.2	0
+101	42	4.3	0
+101	42	4.4	0
+101	42	4.5	0
+101	42	4.6	0
+101	42	4.7	0
+101	42	4.8	0
+101	42	4.9	0
+101	42	5	0
+101	42	5.1	0
+101	42	5.2	0
+101	42	5.22306330397	0
+102	42	0.1	0
+102	42	0.2	0
+102	42	0.3	0
+102	42	0.4	0
+102	42	0.5	0
+102	42	0.6	0
+102	42	0.7	0
+102	42	0.8	0
+102	42	0.9	0
+102	42	1	0
+102	42	1.1	0
+102	42	1.2	0
+102	42	1.3	0
+102	42	1.4	0
+102	42	1.5	0
+102	42	1.6	0
+102	42	1.7	0
+102	42	1.8	0
+102	42	1.9	0
+102	42	2	0
+102	42	2.1	0
+102	42	2.2	0
+102	42	2.3	0
+102	42	2.4	0
+102	42	2.5	0
+102	42	2.6	0
+102	42	2.7	0
+102	42	2.8	0
+102	42	2.9	0
+102	42	3	0
+102	42	3.1	0
+102	42	3.2	0
+102	42	3.3	0
+102	42	3.4	0
+102	42	3.5	0
+102	42	3.6	0
+102	42	3.7	0
+102	42	3.8	0
+102	42	3.9	0
+102	42	4	0
+102	42	4.1	0
+102	42	4.2	0
+102	42	4.3	0
+102	42	4.4	0
+102	42	4.5	0
+102	42	4.6	0
+102	42	4.7	0
+102	42	4.8	0
+102	42	4.9	0
+102	42	5	0
+102	42	5.1	0
+102	42	5.2	0
+102	42	5.22306330397	0
+103	42	0.1	0
+103	42	0.2	0
+103	42	0.3	0
+103	42	0.4	0
+103	42	0.5	0
+103	42	0.6	0
+103	42	0.7	0
+103	42	0.8	0
+103	42	0.9	0
+103	42	1	0
+103	42	1.1	0
+103	42	1.2	0
+103	42	1.3	0
+103	42	1.4	0
+103	42	1.5	0
+103	42	1.6	0
+103	42	1.7	0
+103	42	1.8	0
+103	42	1.9	0
+103	42	2	0
+103	42	2.1	0
+103	42	2.2	0
+103	42	2.3	0
+103	42	2.4	0
+103	42	2.5	0
+103	42	2.6	0
+103	42	2.7	0
+103	42	2.8	0
+103	42	2.9	0
+103	42	3	0
+103	42	3.1	0
+103	42	3.2	0
+103	42	3.3	0
+103	42	3.4	0
+103	42	3.5	0
+103	42	3.6	0
+103	42	3.7	0
+103	42	3.8	0
+103	42	3.9	0
+103	42	4	0
+103	42	4.1	0
+103	42	4.2	0
+103	42	4.3	0
+103	42	4.4	0
+103	42	4.5	0
+103	42	4.6	0
+103	42	4.7	0
+103	42	4.8	0
+103	42	4.9	0
+103	42	5	0
+103	42	5.1	0
+103	42	5.2	0
+103	42	5.22306330397	0
+104	42	0.1	0
+104	42	0.2	0
+104	42	0.3	0
+104	42	0.4	0
+104	42	0.5	0
+104	42	0.6	0
+104	42	0.7	0
+104	42	0.8	0
+104	42	0.9	0
+104	42	1	0
+104	42	1.1	0
+104	42	1.2	0
+104	42	1.3	0
+104	42	1.4	0
+104	42	1.5	0
+104	42	1.6	0
+104	42	1.7	0
+104	42	1.8	0
+104	42	1.9	0
+104	42	2	0
+104	42	2.1	0
+104	42	2.2	0
+104	42	2.3	0
+104	42	2.4	0
+104	42	2.5	0
+104	42	2.6	0
+104	42	2.7	0
+104	42	2.8	0
+104	42	2.9	0
+104	42	3	0
+104	42	3.1	0
+104	42	3.2	0
+104	42	3.3	0
+104	42	3.4	0
+104	42	3.5	0
+104	42	3.6	0
+104	42	3.7	0
+104	42	3.8	0
+104	42	3.9	0
+104	42	4	0
+104	42	4.1	0
+104	42	4.2	0
+104	42	4.3	0
+104	42	4.4	0
+104	42	4.5	0
+104	42	4.6	0
+104	42	4.7	0
+104	42	4.8	0
+104	42	4.9	0
+104	42	5	0
+104	42	5.1	0
+104	42	5.2	0
+104	42	5.22306330397	0
+105	42	0.1	0
+105	42	0.2	0
+105	42	0.3	0
+105	42	0.4	0
+105	42	0.5	0
+105	42	0.6	0
+105	42	0.7	0
+105	42	0.8	0
+105	42	0.9	0
+105	42	1	0
+105	42	1.1	0
+105	42	1.2	0
+105	42	1.3	0
+105	42	1.4	0
+105	42	1.5	0
+105	42	1.6	0
+105	42	1.7	0
+105	42	1.8	0
+105	42	1.9	0
+105	42	2	0
+105	42	2.1	0
+105	42	2.2	0
+105	42	2.3	0
+105	42	2.4	0
+105	42	2.5	0
+105	42	2.6	0
+105	42	2.7	0
+105	42	2.8	0
+105	42	2.9	0
+105	42	3	0
+105	42	3.1	0
+105	42	3.2	0
+105	42	3.3	0
+105	42	3.4	0
+105	42	3.5	0
+105	42	3.6	0
+105	42	3.7	0
+105	42	3.8	0
+105	42	3.9	0
+105	42	4	0
+105	42	4.1	0
+105	42	4.2	0
+105	42	4.3	0
+105	42	4.4	0
+105	42	4.5	0
+105	42	4.6	0
+105	42	4.7	0
+105	42	4.8	0
+105	42	4.9	0
+105	42	5	0
+105	42	5.1	0
+105	42	5.2	0
+105	42	5.22306330397	0
+106	42	0.1	0
+106	42	0.2	0
+106	42	0.3	0
+106	42	0.4	0
+106	42	0.5	0
+106	42	0.6	0
+106	42	0.7	0
+106	42	0.8	0
+106	42	0.9	0
+106	42	1	0
+106	42	1.1	0
+106	42	1.2	0
+106	42	1.3	0
+106	42	1.4	0
+106	42	1.5	0
+106	42	1.6	0
+106	42	1.7	0
+106	42	1.8	0
+106	42	1.9	0
+106	42	2	0
+106	42	2.1	0
+106	42	2.2	0
+106	42	2.3	0
+106	42	2.4	0
+106	42	2.5	0
+106	42	2.6	0
+106	42	2.7	0
+106	42	2.8	0
+106	42	2.9	0
+106	42	3	0
+106	42	3.1	0
+106	42	3.2	0
+106	42	3.3	0
+106	42	3.4	0
+106	42	3.5	0
+106	42	3.6	0
+106	42	3.7	0
+106	42	3.8	0
+106	42	3.9	0
+106	42	4	0
+106	42	4.1	0
+106	42	4.2	0
+106	42	4.3	0
+106	42	4.4	0
+106	42	4.5	0
+106	42	4.6	0
+106	42	4.7	0
+106	42	4.8	0
+106	42	4.9	0
+106	42	5	0
+106	42	5.1	0
+106	42	5.2	0
+106	42	5.22306330397	0
+107	42	0.1	0
+107	42	0.2	0
+107	42	0.3	0
+107	42	0.4	0
+107	42	0.5	0
+107	42	0.6	0
+107	42	0.7	0
+107	42	0.8	0
+107	42	0.9	0
+107	42	1	0
+107	42	1.1	0
+107	42	1.2	0
+107	42	1.3	0
+107	42	1.4	0
+107	42	1.5	0
+107	42	1.6	0
+107	42	1.7	0
+107	42	1.8	0
+107	42	1.9	0
+107	42	2	0
+107	42	2.1	0
+107	42	2.2	0
+107	42	2.3	0
+107	42	2.4	0
+107	42	2.5	0
+107	42	2.6	0
+107	42	2.7	0
+107	42	2.8	0
+107	42	2.9	0
+107	42	3	0
+107	42	3.1	0
+107	42	3.2	0
+107	42	3.3	0
+107	42	3.4	0
+107	42	3.5	0
+107	42	3.6	0
+107	42	3.7	0
+107	42	3.8	0
+107	42	3.9	0
+107	42	4	0
+107	42	4.1	0
+107	42	4.2	0
+107	42	4.3	0
+107	42	4.4	0
+107	42	4.5	0
+107	42	4.6	0
+107	42	4.7	0
+107	42	4.8	0
+107	42	4.9	0
+107	42	5	0
+107	42	5.1	0
+107	42	5.2	0
+107	42	5.22306330397	0
+108	42	0.1	0
+108	42	0.2	0
+108	42	0.3	0
+108	42	0.4	0
+108	42	0.5	0
+108	42	0.6	0
+108	42	0.7	0
+108	42	0.8	0
+108	42	0.9	0
+108	42	1	0
+108	42	1.1	0
+108	42	1.2	0
+108	42	1.3	0
+108	42	1.4	0
+108	42	1.5	0
+108	42	1.6	0
+108	42	1.7	0
+108	42	1.8	0
+108	42	1.9	0
+108	42	2	0
+108	42	2.1	0
+108	42	2.2	0
+108	42	2.3	0
+108	42	2.4	0
+108	42	2.5	0
+108	42	2.6	0
+108	42	2.7	0
+108	42	2.8	0
+108	42	2.9	0
+108	42	3	0
+108	42	3.1	0
+108	42	3.2	0
+108	42	3.3	0
+108	42	3.4	0
+108	42	3.5	0
+108	42	3.6	0
+108	42	3.7	0
+108	42	3.8	0
+108	42	3.9	0
+108	42	4	0
+108	42	4.1	0
+108	42	4.2	0
+108	42	4.3	0
+108	42	4.4	0
+108	42	4.5	0
+108	42	4.6	0
+108	42	4.7	0
+108	42	4.8	0
+108	42	4.9	0
+108	42	5	0
+108	42	5.1	0
+108	42	5.2	0
+108	42	5.22306330397	0
+109	42	0.1	0
+109	42	0.2	0
+109	42	0.3	0
+109	42	0.4	0
+109	42	0.5	0
+109	42	0.6	0
+109	42	0.7	0
+109	42	0.8	0
+109	42	0.9	0
+109	42	1	0
+109	42	1.1	0
+109	42	1.2	0
+109	42	1.3	0
+109	42	1.4	0
+109	42	1.5	0
+109	42	1.6	0
+109	42	1.7	0
+109	42	1.8	0
+109	42	1.9	0
+109	42	2	0
+109	42	2.1	0
+109	42	2.2	0
+109	42	2.3	0
+109	42	2.4	0
+109	42	2.5	0
+109	42	2.6	0
+109	42	2.7	0
+109	42	2.8	0
+109	42	2.9	0
+109	42	3	0
+109	42	3.1	0
+109	42	3.2	0
+109	42	3.3	0
+109	42	3.4	0
+109	42	3.5	0
+109	42	3.6	0
+109	42	3.7	0
+109	42	3.8	0
+109	42	3.9	0
+109	42	4	0
+109	42	4.1	0
+109	42	4.2	0
+109	42	4.3	0
+109	42	4.4	0
+109	42	4.5	0
+109	42	4.6	0
+109	42	4.7	0
+109	42	4.8	0
+109	42	4.9	0
+109	42	5	0
+109	42	5.1	0
+109	42	5.2	0
+109	42	5.22306330397	0
+110	42	0.1	0
+110	42	0.2	0
+110	42	0.3	0
+110	42	0.4	0
+110	42	0.5	0
+110	42	0.6	0
+110	42	0.7	0
+110	42	0.8	0
+110	42	0.9	0
+110	42	1	0
+110	42	1.1	0
+110	42	1.2	0
+110	42	1.3	0
+110	42	1.4	0
+110	42	1.5	0
+110	42	1.6	0
+110	42	1.7	0
+110	42	1.8	0
+110	42	1.9	0
+110	42	2	0
+110	42	2.1	0
+110	42	2.2	0
+110	42	2.3	0
+110	42	2.4	0
+110	42	2.5	0
+110	42	2.6	0
+110	42	2.7	0
+110	42	2.8	0
+110	42	2.9	0
+110	42	3	0
+110	42	3.1	0
+110	42	3.2	0
+110	42	3.3	0
+110	42	3.4	0
+110	42	3.5	0
+110	42	3.6	0
+110	42	3.7	0
+110	42	3.8	0
+110	42	3.9	0
+110	42	4	0
+110	42	4.1	0
+110	42	4.2	0
+110	42	4.3	0
+110	42	4.4	0
+110	42	4.5	0
+110	42	4.6	0
+110	42	4.7	0
+110	42	4.8	0
+110	42	4.9	0
+110	42	5	0
+110	42	5.1	0
+110	42	5.2	0
+110	42	5.22306330397	0
+111	42	0.1	0
+111	42	0.2	0
+111	42	0.3	0
+111	42	0.4	0
+111	42	0.5	0
+111	42	0.6	0
+111	42	0.7	0
+111	42	0.8	0
+111	42	0.9	0
+111	42	1	0
+111	42	1.1	0
+111	42	1.2	0
+111	42	1.3	0
+111	42	1.4	0
+111	42	1.5	0
+111	42	1.6	0
+111	42	1.7	0
+111	42	1.8	0
+111	42	1.9	0
+111	42	2	0
+111	42	2.1	0
+111	42	2.2	0
+111	42	2.3	0
+111	42	2.4	0
+111	42	2.5	0
+111	42	2.6	0
+111	42	2.7	0
+111	42	2.8	0
+111	42	2.9	0
+111	42	3	0
+111	42	3.1	0
+111	42	3.2	0
+111	42	3.3	0
+111	42	3.4	0
+111	42	3.5	0
+111	42	3.6	0
+111	42	3.7	0
+111	42	3.8	0
+111	42	3.9	0
+111	42	4	0
+111	42	4.1	0
+111	42	4.2	0
+111	42	4.3	0
+111	42	4.4	0
+111	42	4.5	0
+111	42	4.6	0
+111	42	4.7	0
+111	42	4.8	0
+111	42	4.9	0
+111	42	5	0
+111	42	5.1	0
+111	42	5.2	0
+111	42	5.22306330397	0
+112	42	0.1	0
+112	42	0.2	0
+112	42	0.3	0
+112	42	0.4	0
+112	42	0.5	0
+112	42	0.6	0
+112	42	0.7	0
+112	42	0.8	0
+112	42	0.9	0
+112	42	1	0
+112	42	1.1	0
+112	42	1.2	0
+112	42	1.3	0
+112	42	1.4	0
+112	42	1.5	0
+112	42	1.6	0
+112	42	1.7	0
+112	42	1.8	0
+112	42	1.9	0
+112	42	2	0
+112	42	2.1	0
+112	42	2.2	0
+112	42	2.3	0
+112	42	2.4	0
+112	42	2.5	0
+112	42	2.6	0
+112	42	2.7	0
+112	42	2.8	0
+112	42	2.9	0
+112	42	3	0
+112	42	3.1	0
+112	42	3.2	0
+112	42	3.3	0
+112	42	3.4	0
+112	42	3.5	0
+112	42	3.6	0
+112	42	3.7	0
+112	42	3.8	0
+112	42	3.9	0
+112	42	4	0
+112	42	4.1	0
+112	42	4.2	0
+112	42	4.3	0
+112	42	4.4	0
+112	42	4.5	0
+112	42	4.6	0
+112	42	4.7	0
+112	42	4.8	0
+112	42	4.9	0
+112	42	5	0
+112	42	5.1	0
+112	42	5.2	0
+112	42	5.22306330397	0
+113	42	0.1	0
+113	42	0.2	0
+113	42	0.3	0
+113	42	0.4	0
+113	42	0.5	0
+113	42	0.6	0
+113	42	0.7	0
+113	42	0.8	0
+113	42	0.9	0
+113	42	1	0
+113	42	1.1	0
+113	42	1.2	0
+113	42	1.3	0
+113	42	1.4	0
+113	42	1.5	0
+113	42	1.6	0
+113	42	1.7	0
+113	42	1.8	0
+113	42	1.9	0
+113	42	2	0
+113	42	2.1	0
+113	42	2.2	0
+113	42	2.3	0
+113	42	2.4	0
+113	42	2.5	0
+113	42	2.6	0
+113	42	2.7	0
+113	42	2.8	0
+113	42	2.9	0
+113	42	3	0
+113	42	3.1	0
+113	42	3.2	0
+113	42	3.3	0
+113	42	3.4	0
+113	42	3.5	0
+113	42	3.6	0
+113	42	3.7	0
+113	42	3.8	0
+113	42	3.9	0
+113	42	4	0
+113	42	4.1	0
+113	42	4.2	0
+113	42	4.3	0
+113	42	4.4	0
+113	42	4.5	0
+113	42	4.6	0
+113	42	4.7	0
+113	42	4.8	0
+113	42	4.9	0
+113	42	5	0
+113	42	5.1	0
+113	42	5.2	0
+113	42	5.22306330397	0
+114	42	0.1	0
+114	42	0.2	0
+114	42	0.3	0
+114	42	0.4	0
+114	42	0.5	0
+114	42	0.6	0
+114	42	0.7	0
+114	42	0.8	0
+114	42	0.9	0
+114	42	1	0
+114	42	1.1	0
+114	42	1.2	0
+114	42	1.3	0
+114	42	1.4	0
+114	42	1.5	0
+114	42	1.6	0
+114	42	1.7	0
+114	42	1.8	0
+114	42	1.9	0
+114	42	2	0
+114	42	2.1	0
+114	42	2.2	0
+114	42	2.3	0
+114	42	2.4	0
+114	42	2.5	0
+114	42	2.6	0
+114	42	2.7	0
+114	42	2.8	0
+114	42	2.9	0
+114	42	3	0
+114	42	3.1	0
+114	42	3.2	0
+114	42	3.3	0
+114	42	3.4	0
+114	42	3.5	0
+114	42	3.6	0
+114	42	3.7	0
+114	42	3.8	0
+114	42	3.9	0
+114	42	4	0
+114	42	4.1	0
+114	42	4.2	0
+114	42	4.3	0
+114	42	4.4	0
+114	42	4.5	0
+114	42	4.6	0
+114	42	4.7	0
+114	42	4.8	0
+114	42	4.9	0
+114	42	5	0
+114	42	5.1	0
+114	42	5.2	0
+114	42	5.22306330397	0
+115	42	0.1	0
+115	42	0.2	0
+115	42	0.3	0
+115	42	0.4	0
+115	42	0.5	0
+115	42	0.6	0
+115	42	0.7	0
+115	42	0.8	0
+115	42	0.9	0
+115	42	1	0
+115	42	1.1	0
+115	42	1.2	0
+115	42	1.3	0
+115	42	1.4	0
+115	42	1.5	0
+115	42	1.6	0
+115	42	1.7	0
+115	42	1.8	0
+115	42	1.9	0
+115	42	2	0
+115	42	2.1	0
+115	42	2.2	0
+115	42	2.3	0
+115	42	2.4	0
+115	42	2.5	0
+115	42	2.6	0
+115	42	2.7	0
+115	42	2.8	0
+115	42	2.9	0
+115	42	3	0
+115	42	3.1	0
+115	42	3.2	0
+115	42	3.3	0
+115	42	3.4	0
+115	42	3.5	0
+115	42	3.6	0
+115	42	3.7	0
+115	42	3.8	0
+115	42	3.9	0
+115	42	4	0
+115	42	4.1	0
+115	42	4.2	0
+115	42	4.3	0
+115	42	4.4	0
+115	42	4.5	0
+115	42	4.6	0
+115	42	4.7	0
+115	42	4.8	0
+115	42	4.9	0
+115	42	5	0
+115	42	5.1	0
+115	42	5.2	0
+115	42	5.22306330397	0
+116	42	0.1	0
+116	42	0.2	0
+116	42	0.3	0
+116	42	0.4	0
+116	42	0.5	0
+116	42	0.6	0
+116	42	0.7	0
+116	42	0.8	0
+116	42	0.9	0
+116	42	1	0
+116	42	1.1	0
+116	42	1.2	0
+116	42	1.3	0
+116	42	1.4	0
+116	42	1.5	0
+116	42	1.6	0
+116	42	1.7	0
+116	42	1.8	0
+116	42	1.9	0
+116	42	2	0
+116	42	2.1	0
+116	42	2.2	0
+116	42	2.3	0
+116	42	2.4	0
+116	42	2.5	0
+116	42	2.6	0
+116	42	2.7	0
+116	42	2.8	0
+116	42	2.9	0
+116	42	3	0
+116	42	3.1	0
+116	42	3.2	0
+116	42	3.3	0
+116	42	3.4	0
+116	42	3.5	0
+116	42	3.6	0
+116	42	3.7	0
+116	42	3.8	0
+116	42	3.9	0
+116	42	4	0
+116	42	4.1	0
+116	42	4.2	0
+116	42	4.3	0
+116	42	4.4	0
+116	42	4.5	0
+116	42	4.6	0
+116	42	4.7	0
+116	42	4.8	0
+116	42	4.9	0
+116	42	5	0
+116	42	5.1	0
+116	42	5.2	0
+116	42	5.22306330397	0
+117	42	0.1	0
+117	42	0.2	0
+117	42	0.3	0
+117	42	0.4	0
+117	42	0.5	0
+117	42	0.6	0
+117	42	0.7	0
+117	42	0.8	0
+117	42	0.9	0
+117	42	1	0
+117	42	1.1	0
+117	42	1.2	0
+117	42	1.3	0
+117	42	1.4	0
+117	42	1.5	0
+117	42	1.6	0
+117	42	1.7	0
+117	42	1.8	0
+117	42	1.9	0
+117	42	2	0
+117	42	2.1	0
+117	42	2.2	0
+117	42	2.3	0
+117	42	2.4	0
+117	42	2.5	0
+117	42	2.6	0
+117	42	2.7	0
+117	42	2.8	0
+117	42	2.9	0
+117	42	3	0
+117	42	3.1	0
+117	42	3.2	0
+117	42	3.3	0
+117	42	3.4	0
+117	42	3.5	0
+117	42	3.6	0
+117	42	3.7	0
+117	42	3.8	0
+117	42	3.9	0
+117	42	4	0
+117	42	4.1	0
+117	42	4.2	0
+117	42	4.3	0
+117	42	4.4	0
+117	42	4.5	0
+117	42	4.6	0
+117	42	4.7	0
+117	42	4.8	0
+117	42	4.9	0
+117	42	5	0
+117	42	5.1	0
+117	42	5.2	0
+117	42	5.22306330397	0
+118	42	0.1	0
+118	42	0.2	0
+118	42	0.3	0
+118	42	0.4	0
+118	42	0.5	0
+118	42	0.6	0
+118	42	0.7	0
+118	42	0.8	0
+118	42	0.9	0
+118	42	1	0
+118	42	1.1	0
+118	42	1.2	0
+118	42	1.3	0
+118	42	1.4	0
+118	42	1.5	0
+118	42	1.6	0
+118	42	1.7	0
+118	42	1.8	0
+118	42	1.9	0
+118	42	2	0
+118	42	2.1	0
+118	42	2.2	0
+118	42	2.3	0
+118	42	2.4	0
+118	42	2.5	0
+118	42	2.6	0
+118	42	2.7	0
+118	42	2.8	0
+118	42	2.9	0
+118	42	3	0
+118	42	3.1	0
+118	42	3.2	0
+118	42	3.3	0
+118	42	3.4	0
+118	42	3.5	0
+118	42	3.6	0
+118	42	3.7	0
+118	42	3.8	0
+118	42	3.9	0
+118	42	4	0
+118	42	4.1	0
+118	42	4.2	0
+118	42	4.3	0
+118	42	4.4	0
+118	42	4.5	0
+118	42	4.6	0
+118	42	4.7	0
+118	42	4.8	0
+118	42	4.9	0
+118	42	5	0
+118	42	5.1	0
+118	42	5.2	0
+118	42	5.22306330397	0
+119	42	0.1	0
+119	42	0.2	0
+119	42	0.3	0
+119	42	0.4	0
+119	42	0.5	0
+119	42	0.6	0
+119	42	0.7	0
+119	42	0.8	0
+119	42	0.9	0
+119	42	1	0
+119	42	1.1	0
+119	42	1.2	0
+119	42	1.3	0
+119	42	1.4	0
+119	42	1.5	0
+119	42	1.6	0
+119	42	1.7	0
+119	42	1.8	0
+119	42	1.9	0
+119	42	2	0
+119	42	2.1	0
+119	42	2.2	0
+119	42	2.3	0
+119	42	2.4	0
+119	42	2.5	0
+119	42	2.6	0
+119	42	2.7	0
+119	42	2.8	0
+119	42	2.9	0
+119	42	3	0
+119	42	3.1	0
+119	42	3.2	0
+119	42	3.3	0
+119	42	3.4	0
+119	42	3.5	0
+119	42	3.6	0
+119	42	3.7	0
+119	42	3.8	0
+119	42	3.9	0
+119	42	4	0
+119	42	4.1	0
+119	42	4.2	0
+119	42	4.3	0
+119	42	4.4	0
+119	42	4.5	0
+119	42	4.6	0
+119	42	4.7	0
+119	42	4.8	0
+119	42	4.9	0
+119	42	5	0
+119	42	5.1	0
+119	42	5.2	0
+119	42	5.22306330397	0
+120	42	0.1	0
+120	42	0.2	0
+120	42	0.3	0
+120	42	0.4	0
+120	42	0.5	0
+120	42	0.6	0
+120	42	0.7	0
+120	42	0.8	0
+120	42	0.9	0
+120	42	1	0
+120	42	1.1	0
+120	42	1.2	0
+120	42	1.3	0
+120	42	1.4	0
+120	42	1.5	0
+120	42	1.6	0
+120	42	1.7	0
+120	42	1.8	0
+120	42	1.9	0
+120	42	2	0
+120	42	2.1	0
+120	42	2.2	0
+120	42	2.3	0
+120	42	2.4	0
+120	42	2.5	0
+120	42	2.6	0
+120	42	2.7	0
+120	42	2.8	0
+120	42	2.9	0
+120	42	3	0
+120	42	3.1	0
+120	42	3.2	0
+120	42	3.3	0
+120	42	3.4	0
+120	42	3.5	0
+120	42	3.6	0
+120	42	3.7	0
+120	42	3.8	0
+120	42	3.9	0
+120	42	4	0
+120	42	4.1	0
+120	42	4.2	0
+120	42	4.3	0
+120	42	4.4	0
+120	42	4.5	0
+120	42	4.6	0
+120	42	4.7	0
+120	42	4.8	0
+120	42	4.9	0
+120	42	5	0
+120	42	5.1	0
+120	42	5.2	0
+120	42	5.22306330397	0
+121	42	0.1	0
+121	42	0.2	0
+121	42	0.3	0
+121	42	0.4	0
+121	42	0.5	0
+121	42	0.6	0
+121	42	0.7	0
+121	42	0.8	0
+121	42	0.9	0
+121	42	1	0
+121	42	1.1	0
+121	42	1.2	0
+121	42	1.3	0
+121	42	1.4	0
+121	42	1.5	0
+121	42	1.6	0
+121	42	1.7	0
+121	42	1.8	0
+121	42	1.9	0
+121	42	2	0
+121	42	2.1	0
+121	42	2.2	0
+121	42	2.3	0
+121	42	2.4	0
+121	42	2.5	0
+121	42	2.6	0
+121	42	2.7	0
+121	42	2.8	0
+121	42	2.9	0
+121	42	3	0
+121	42	3.1	0
+121	42	3.2	0
+121	42	3.3	0
+121	42	3.4	0
+121	42	3.5	0
+121	42	3.6	0
+121	42	3.7	0
+121	42	3.8	0
+121	42	3.9	0
+121	42	4	0
+121	42	4.1	0
+121	42	4.2	0
+121	42	4.3	0
+121	42	4.4	0
+121	42	4.5	0
+121	42	4.6	0
+121	42	4.7	0
+121	42	4.8	0
+121	42	4.9	0
+121	42	5	0
+121	42	5.1	0
+121	42	5.2	0
+121	42	5.22306330397	0
+122	42	0.1	0
+122	42	0.2	0
+122	42	0.3	0
+122	42	0.4	0
+122	42	0.5	0
+122	42	0.6	0
+122	42	0.7	0
+122	42	0.8	0
+122	42	0.9	0
+122	42	1	0
+122	42	1.1	0
+122	42	1.2	0
+122	42	1.3	0
+122	42	1.4	0
+122	42	1.5	0
+122	42	1.6	0
+122	42	1.7	0
+122	42	1.8	0
+122	42	1.9	0
+122	42	2	0
+122	42	2.1	0
+122	42	2.2	0
+122	42	2.3	0
+122	42	2.4	0
+122	42	2.5	0
+122	42	2.6	0
+122	42	2.7	0
+122	42	2.8	0
+122	42	2.9	0
+122	42	3	0
+122	42	3.1	0
+122	42	3.2	0
+122	42	3.3	0
+122	42	3.4	0
+122	42	3.5	0
+122	42	3.6	0
+122	42	3.7	0
+122	42	3.8	0
+122	42	3.9	0
+122	42	4	0
+122	42	4.1	0
+122	42	4.2	0
+122	42	4.3	0
+122	42	4.4	0
+122	42	4.5	0
+122	42	4.6	0
+122	42	4.7	0
+122	42	4.8	0
+122	42	4.9	0
+122	42	5	0
+122	42	5.1	0
+122	42	5.2	0
+122	42	5.22306330397	0
+123	42	0.1	0
+123	42	0.2	0
+123	42	0.3	0
+123	42	0.4	0
+123	42	0.5	0
+123	42	0.6	0
+123	42	0.7	0
+123	42	0.8	0
+123	42	0.9	0
+123	42	1	0
+123	42	1.1	0
+123	42	1.2	0
+123	42	1.3	0
+123	42	1.4	0
+123	42	1.5	0
+123	42	1.6	0
+123	42	1.7	0
+123	42	1.8	0
+123	42	1.9	0
+123	42	2	0
+123	42	2.1	0
+123	42	2.2	0
+123	42	2.3	0
+123	42	2.4	0
+123	42	2.5	0
+123	42	2.6	0
+123	42	2.7	0
+123	42	2.8	0
+123	42	2.9	0
+123	42	3	0
+123	42	3.1	0
+123	42	3.2	0
+123	42	3.3	0
+123	42	3.4	0
+123	42	3.5	0
+123	42	3.6	0
+123	42	3.7	0
+123	42	3.8	0
+123	42	3.9	0
+123	42	4	0
+123	42	4.1	0
+123	42	4.2	0
+123	42	4.3	0
+123	42	4.4	0
+123	42	4.5	0
+123	42	4.6	0
+123	42	4.7	0
+123	42	4.8	0
+123	42	4.9	0
+123	42	5	0
+123	42	5.1	0
+123	42	5.2	0
+123	42	5.22306330397	0
+124	42	0.1	0
+124	42	0.2	0
+124	42	0.3	0
+124	42	0.4	0
+124	42	0.5	0
+124	42	0.6	0
+124	42	0.7	0
+124	42	0.8	0
+124	42	0.9	0
+124	42	1	0
+124	42	1.1	0
+124	42	1.2	0
+124	42	1.3	0
+124	42	1.4	0
+124	42	1.5	0
+124	42	1.6	0
+124	42	1.7	0
+124	42	1.8	0
+124	42	1.9	0
+124	42	2	0
+124	42	2.1	0
+124	42	2.2	0
+124	42	2.3	0
+124	42	2.4	0
+124	42	2.5	0
+124	42	2.6	0
+124	42	2.7	0
+124	42	2.8	0
+124	42	2.9	0
+124	42	3	0
+124	42	3.1	0
+124	42	3.2	0
+124	42	3.3	0
+124	42	3.4	0
+124	42	3.5	0
+124	42	3.6	0
+124	42	3.7	0
+124	42	3.8	0
+124	42	3.9	0
+124	42	4	0
+124	42	4.1	0
+124	42	4.2	0
+124	42	4.3	0
+124	42	4.4	0
+124	42	4.5	0
+124	42	4.6	0
+124	42	4.7	0
+124	42	4.8	0
+124	42	4.9	0
+124	42	5	0
+124	42	5.1	0
+124	42	5.2	0
+124	42	5.22306330397	0
+125	42	0.1	0
+125	42	0.2	0
+125	42	0.3	0
+125	42	0.4	0
+125	42	0.5	0
+125	42	0.6	0
+125	42	0.7	0
+125	42	0.8	0
+125	42	0.9	0
+125	42	1	0
+125	42	1.1	0
+125	42	1.2	0
+125	42	1.3	0
+125	42	1.4	0
+125	42	1.5	0
+125	42	1.6	0
+125	42	1.7	0
+125	42	1.8	0
+125	42	1.9	0
+125	42	2	0
+125	42	2.1	0
+125	42	2.2	0
+125	42	2.3	0
+125	42	2.4	0
+125	42	2.5	0
+125	42	2.6	0
+125	42	2.7	0
+125	42	2.8	0
+125	42	2.9	0
+125	42	3	0
+125	42	3.1	0
+125	42	3.2	0
+125	42	3.3	0
+125	42	3.4	0
+125	42	3.5	0
+125	42	3.6	0
+125	42	3.7	0
+125	42	3.8	0
+125	42	3.9	0
+125	42	4	0
+125	42	4.1	0
+125	42	4.2	0
+125	42	4.3	0
+125	42	4.4	0
+125	42	4.5	0
+125	42	4.6	0
+125	42	4.7	0
+125	42	4.8	0
+125	42	4.9	0
+125	42	5	0
+125	42	5.1	0
+125	42	5.2	0
+125	42	5.22306330397	0
+126	42	0.1	0
+126	42	0.2	0
+126	42	0.3	0
+126	42	0.4	0
+126	42	0.5	0
+126	42	0.6	0
+126	42	0.7	0
+126	42	0.8	0
+126	42	0.9	0
+126	42	1	0
+126	42	1.1	0
+126	42	1.2	0
+126	42	1.3	0
+126	42	1.4	0
+126	42	1.5	0
+126	42	1.6	0
+126	42	1.7	0
+126	42	1.8	0
+126	42	1.9	0
+126	42	2	0
+126	42	2.1	0
+126	42	2.2	0
+126	42	2.3	0
+126	42	2.4	0
+126	42	2.5	0
+126	42	2.6	0
+126	42	2.7	0
+126	42	2.8	0
+126	42	2.9	0
+126	42	3	0
+126	42	3.1	0
+126	42	3.2	0
+126	42	3.3	0
+126	42	3.4	0
+126	42	3.5	0
+126	42	3.6	0
+126	42	3.7	0
+126	42	3.8	0
+126	42	3.9	0
+126	42	4	0
+126	42	4.1	0
+126	42	4.2	0
+126	42	4.3	0
+126	42	4.4	0
+126	42	4.5	0
+126	42	4.6	0
+126	42	4.7	0
+126	42	4.8	0
+126	42	4.9	0
+126	42	5	0
+126	42	5.1	0
+126	42	5.2	0
+126	42	5.22306330397	0
+127	42	0.1	0
+127	42	0.2	0
+127	42	0.3	0
+127	42	0.4	0
+127	42	0.5	0
+127	42	0.6	0
+127	42	0.7	0
+127	42	0.8	0
+127	42	0.9	0
+127	42	1	0
+127	42	1.1	0
+127	42	1.2	0
+127	42	1.3	0
+127	42	1.4	0
+127	42	1.5	0
+127	42	1.6	0
+127	42	1.7	0
+127	42	1.8	0
+127	42	1.9	0
+127	42	2	0
+127	42	2.1	0
+127	42	2.2	0
+127	42	2.3	0
+127	42	2.4	0
+127	42	2.5	0
+127	42	2.6	0
+127	42	2.7	0
+127	42	2.8	0
+127	42	2.9	0
+127	42	3	0
+127	42	3.1	0
+127	42	3.2	0
+127	42	3.3	0
+127	42	3.4	0
+127	42	3.5	0
+127	42	3.6	0
+127	42	3.7	0
+127	42	3.8	0
+127	42	3.9	0
+127	42	4	0
+127	42	4.1	0
+127	42	4.2	0
+127	42	4.3	0
+127	42	4.4	0
+127	42	4.5	0
+127	42	4.6	0
+127	42	4.7	0
+127	42	4.8	0
+127	42	4.9	0
+127	42	5	0
+127	42	5.1	0
+127	42	5.2	0
+127	42	5.22306330397	0
+128	42	0.1	0
+128	42	0.2	0
+128	42	0.3	0
+128	42	0.4	0
+128	42	0.5	0
+128	42	0.6	0
+128	42	0.7	0
+128	42	0.8	0
+128	42	0.9	0
+128	42	1	0
+128	42	1.1	0
+128	42	1.2	0
+128	42	1.3	0
+128	42	1.4	0
+128	42	1.5	0
+128	42	1.6	0
+128	42	1.7	0
+128	42	1.8	0
+128	42	1.9	0
+128	42	2	0
+128	42	2.1	0
+128	42	2.2	0
+128	42	2.3	0
+128	42	2.4	0
+128	42	2.5	0
+128	42	2.6	0
+128	42	2.7	0
+128	42	2.8	0
+128	42	2.9	0
+128	42	3	0
+128	42	3.1	0
+128	42	3.2	0
+128	42	3.3	0
+128	42	3.4	0
+128	42	3.5	0
+128	42	3.6	0
+128	42	3.7	0
+128	42	3.8	0
+128	42	3.9	0
+128	42	4	0
+128	42	4.1	0
+128	42	4.2	0
+128	42	4.3	0
+128	42	4.4	0
+128	42	4.5	0
+128	42	4.6	0
+128	42	4.7	0
+128	42	4.8	0
+128	42	4.9	0
+128	42	5	0
+128	42	5.1	0
+128	42	5.2	0
+128	42	5.22306330397	0
+
